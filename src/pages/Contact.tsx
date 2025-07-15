@@ -203,12 +203,12 @@ Business Information:
                       onChange={handleChange}
                       className="w-full pl-10 pr-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
                     >
-                      <option value="">Select range</option>
-                      <option value="1-10">1-10</option>
-                      <option value="11-50">11-50</option>
-                      <option value="51-200">51-200</option>
-                      <option value="201-1000">201-1000</option>
-                      <option value="1000+">1000+</option>
+                      <option value="">{translate('booking.employees.select') || 'Select range'}</option>
+                      <option value="1-10">{translate('booking.employees.1-10')}</option>
+                      <option value="11-50">{translate('booking.employees.11-50')}</option>
+                      <option value="51-200">{translate('booking.employees.51-200')}</option>
+                      <option value="201-1000">{translate('booking.employees.201-1000')}</option>
+                      <option value="1000+">{translate('booking.employees.1000+')}</option>
                     </select>
                   </div>
                 </div>
@@ -226,14 +226,14 @@ Business Information:
                       onChange={handleChange}
                       className="w-full pl-10 pr-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
                     >
-                      <option value="">Select industry</option>
-                      <option value="hospitality">Hospitality & Tourism</option>
-                      <option value="manufacturing">Manufacturing</option>
-                      <option value="healthcare">Healthcare</option>
-                      <option value="finance">Finance & Banking</option>
-                      <option value="retail">Retail & E-commerce</option>
-                      <option value="technology">Technology</option>
-                      <option value="other">Other</option>
+                      <option value="">{translate('booking.industry.select') || 'Select industry'}</option>
+                      <option value="hospitality">{translate('booking.industry.hospitality')}</option>
+                      <option value="manufacturing">{translate('booking.industry.manufacturing')}</option>
+                      <option value="healthcare">{translate('booking.industry.healthcare')}</option>
+                      <option value="finance">{translate('booking.industry.finance')}</option>
+                      <option value="retail">{translate('booking.industry.retail')}</option>
+                      <option value="technology">{translate('booking.industry.technology')}</option>
+                      <option value="other">{translate('booking.industry.other')}</option>
                     </select>
                   </div>
                 </div>
@@ -251,12 +251,12 @@ Business Information:
                       onChange={handleChange}
                       className="w-full pl-10 pr-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
                     >
-                      <option value="">Select budget range</option>
-                      <option value="under-10k">Under €10,000</option>
-                      <option value="10k-50k">€10,000 - €50,000</option>
-                      <option value="50k-100k">€50,000 - €100,000</option>
-                      <option value="100k-500k">€100,000 - €500,000</option>
-                      <option value="500k+">€500,000+</option>
+                      <option value="">{translate('booking.budget.select') || 'Select budget range'}</option>
+                      <option value="under-10k">{translate('booking.budget.under-10k')}</option>
+                      <option value="10k-50k">{translate('booking.budget.10k-50k')}</option>
+                      <option value="50k-100k">{translate('booking.budget.50k-100k')}</option>
+                      <option value="100k-500k">{translate('booking.budget.100k-500k')}</option>
+                      <option value="500k+">{translate('booking.budget.500k+')}</option>
                     </select>
                   </div>
                 </div>
@@ -274,12 +274,12 @@ Business Information:
                       onChange={handleChange}
                       className="w-full pl-10 pr-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
                     >
-                      <option value="">Select timeline</option>
-                      <option value="asap">ASAP</option>
-                      <option value="1-3months">1-3 months</option>
-                      <option value="3-6months">3-6 months</option>
-                      <option value="6-12months">6-12 months</option>
-                      <option value="12months+">12+ months</option>
+                      <option value="">{translate('booking.timeline.select') || 'Select timeline'}</option>
+                      <option value="asap">{translate('booking.timeline.asap')}</option>
+                      <option value="1-3months">{translate('booking.timeline.1-3months')}</option>
+                      <option value="3-6months">{translate('booking.timeline.3-6months')}</option>
+                      <option value="6-12months">{translate('booking.timeline.6-12months')}</option>
+                      <option value="12months+">{translate('booking.timeline.12months+')}</option>
                     </select>
                   </div>
                 </div>
