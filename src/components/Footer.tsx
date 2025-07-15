@@ -18,7 +18,7 @@ const Footer: React.FC<FooterProps> = ({ onBookingClick }) => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <Brain className="h-8 w-8 text-blue-400" />
-              <span className="text-xl font-bold">EA Solutions</span>
+              <span className="text-xl font-bold">Athenex</span>
             </div>
             <p className="text-gray-300 dark:text-gray-400 mb-6 max-w-md">
               {translate('footer.description')}
