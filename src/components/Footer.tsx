@@ -18,7 +18,7 @@ const Footer: React.FC<FooterProps> = ({ onBookingClick }) => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <Brain className="h-8 w-8 text-blue-400" />
-              <span className="text-xl font-bold">Athenex</span>
+              <span className="text-xl font-bold">EAS</span>
             </div>
             <p className="text-gray-300 dark:text-gray-400 mb-6 max-w-md">
               {translate('footer.description')}
@@ -66,7 +66,7 @@ const Footer: React.FC<FooterProps> = ({ onBookingClick }) => {
         <div className="border-t border-gray-800 dark:border-gray-700 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 dark:text-gray-500 mb-4 md:mb-0">
-              © 2025 EA Solutions. {translate('footer.rights')}
+              © 2025 EAS. {translate('footer.rights')}
             </p>
             <div className="flex space-x-6">
               <Link to="/datenschutz" className="text-gray-400 dark:text-gray-500 hover:text-white dark:hover:text-gray-200 transition-colors text-sm">

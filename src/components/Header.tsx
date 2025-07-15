@@ -20,7 +20,7 @@ const Header: React.FC<HeaderProps> = ({ onBookingClick }) => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <Brain className="h-8 w-8 text-blue-900 dark:text-blue-400" />
-            <span className="text-xl font-bold text-gray-900 dark:text-white">Athenex</span>
+            <span className="text-xl font-bold text-gray-900 dark:text-white">EAS</span>
           </Link>
 
           {/* Desktop Navigation */}
