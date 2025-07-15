@@ -38,7 +38,7 @@ const translations: Record<string, Record<string, string>> = {
     'industry.smart': 'Smart Living',
     'industry.healthcare': 'Healthcare',
     'industry.retail': 'Retail',
-    'industry.retail.status': 'Coming Soon'
+    'industry.retail.status': 'Coming Soon',
     
     // Smart Living translations
     'smartliving.hero.title': 'Smart Living & Personal AI',
