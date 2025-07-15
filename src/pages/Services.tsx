@@ -293,37 +293,36 @@ const Services: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              AI-Powered Websites & Apps
+              {translate('services.hero.title')}
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 max-w-4xl mx-auto mb-8">
-              We build intelligent websites and applications with AI integration, smart automation, 
-              and modern design. 40-60% cost savings compared to big companies.
+              {translate('services.hero.subtitle')}
             </p>
             
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 max-w-3xl mx-auto mb-8">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
                 <div>
                   <div className="text-3xl font-bold mb-2">40-60%</div>
-                  <div className="text-blue-100">Cost Savings</div>
+                  <div className="text-blue-100">{translate('services.hero.stats.savings')}</div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold mb-2">2-12</div>
-                  <div className="text-blue-100">Weeks Delivery</div>
+                  <div className="text-blue-100">{translate('services.hero.stats.delivery')}</div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold mb-2">100%</div>
-                  <div className="text-blue-100">AI Integration</div>
+                  <div className="text-blue-100">{translate('services.hero.stats.integration')}</div>
                 </div>
               </div>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-50 transition-colors duration-300 shadow-lg">
-                Get Free Quote
+                {translate('services.hero.cta.quote')}
               </button>
               <button className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300">
                 <Play className="mr-2 h-5 w-5 inline" />
-                View Portfolio
+                {translate('services.hero.cta.portfolio')}
               </button>
             </div>
           </div>
@@ -334,9 +333,9 @@ const Services: React.FC = () => {
       <section className="py-20 bg-gray-50 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Featured Project</h2>
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">{translate('services.featured.title')}</h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              See how we transformed a traditional piano school into a modern, AI-powered platform.
+              {translate('services.featured.subtitle')}
             </p>
           </div>
 
@@ -357,22 +356,21 @@ const Services: React.FC = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Klavierschule Glenn Miller</h3>
-                    <p className="text-blue-600 dark:text-blue-400">AI-Integrated Piano School Platform</p>
+                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white">{translate('services.featured.piano.title')}</h3>
+                    <p className="text-blue-600 dark:text-blue-400">{translate('services.featured.piano.subtitle')}</p>
                   </div>
                 </div>
                 
                 <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-                  Complete website transformation with AI-powered booking system, intelligent schedule creator, 
-                  and automated student management. Features smart lesson planning and personalized learning paths.
+                  {translate('services.featured.piano.description')}
                 </p>
                 
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   {[
-                    { icon: Calendar, label: 'AI Booking System', color: 'text-blue-500' },
-                    { icon: MessageSquare, label: 'Smart Chatbot', color: 'text-green-500' },
-                    { icon: Users, label: 'Student Management', color: 'text-purple-500' },
-                    { icon: BarChart3, label: 'Analytics Dashboard', color: 'text-orange-500' }
+                    { icon: Calendar, label: translate('services.featured.features.booking'), color: 'text-blue-500' },
+                    { icon: MessageSquare, label: translate('services.featured.features.chatbot'), color: 'text-green-500' },
+                    { icon: Users, label: translate('services.featured.features.management'), color: 'text-purple-500' },
+                    { icon: BarChart3, label: translate('services.featured.features.analytics'), color: 'text-orange-500' }
                   ].map((feature, index) => {
                     const IconComponent = feature.icon;
                     return (
@@ -391,11 +389,11 @@ const Services: React.FC = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center text-blue-600 dark:text-blue-400 font-medium hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
                   >
-                    Visit Website
+                    {translate('services.featured.visit')}
                     <ExternalLink className="ml-2 h-4 w-4" />
                   </a>
                   <div className="text-sm text-green-600 dark:text-green-400 font-medium">
-                    40-60% cost savings vs big companies
+                    {translate('services.featured.savings')}
                   </div>
                 </div>
               </div>
@@ -416,14 +414,99 @@ const Services: React.FC = () => {
       <section className="py-20 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Our Services</h2>
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">{translate('services.list.title')}</h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              Comprehensive digital solutions powered by AI to transform your business operations.
+              {translate('services.list.subtitle')}
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => {
+            {[
+              {
+                icon: Code,
+                title: translate('services.development.title'),
+                description: translate('services.development.description'),
+                features: [
+                  translate('services.development.features.assisted'),
+                  translate('services.development.features.responsive'),
+                  translate('services.development.features.seo'),
+                  translate('services.development.features.performance'),
+                  translate('services.development.features.cms'),
+                  translate('services.development.features.analytics')
+                ],
+                gradient: 'from-green-500 to-teal-600'
+              },
+              {
+                icon: Smartphone,
+                title: translate('services.mobile.title'),
+                description: translate('services.mobile.description'),
+                features: [
+                  translate('services.mobile.features.ios'),
+                  translate('services.mobile.features.crossplatform'),
+                  translate('services.mobile.features.ai'),
+                  translate('services.mobile.features.notifications'),
+                  translate('services.mobile.features.offline'),
+                  translate('services.mobile.features.optimization')
+                ],
+                gradient: 'from-green-500 to-teal-600'
+              },
+              {
+                icon: MessageSquare,
+                title: translate('services.chatbots.title'),
+                description: translate('services.chatbots.description'),
+                features: [
+                  translate('services.chatbots.features.nlp'),
+                  translate('services.chatbots.features.multilang'),
+                  translate('services.chatbots.features.integration'),
+                  translate('services.chatbots.features.support'),
+                  translate('services.chatbots.features.learning'),
+                  translate('services.chatbots.features.reporting')
+                ],
+                gradient: 'from-purple-500 to-pink-500'
+              },
+              {
+                icon: Calendar,
+                title: translate('services.booking.title'),
+                description: translate('services.booking.description'),
+                features: [
+                  translate('services.booking.features.availability'),
+                  translate('services.booking.features.scheduling'),
+                  translate('services.booking.features.payment'),
+                  translate('services.booking.features.reminders'),
+                  translate('services.booking.features.calendar'),
+                  translate('services.booking.features.dashboard')
+                ],
+                gradient: 'from-orange-500 to-red-600'
+              },
+              {
+                icon: BarChart3,
+                title: translate('services.analytics.title'),
+                description: translate('services.analytics.description'),
+                features: [
+                  translate('services.analytics.features.visualization'),
+                  translate('services.analytics.features.predictive'),
+                  translate('services.analytics.features.reporting'),
+                  translate('services.analytics.features.kpi'),
+                  translate('services.analytics.features.integration'),
+                  translate('services.analytics.features.mobile')
+                ],
+                gradient: 'from-indigo-500 to-purple-600'
+              },
+              {
+                icon: Globe,
+                title: translate('services.ecommerce.title'),
+                description: translate('services.ecommerce.description'),
+                features: [
+                  translate('services.ecommerce.features.catalog'),
+                  translate('services.ecommerce.features.recommendations'),
+                  translate('services.ecommerce.features.payment'),
+                  translate('services.ecommerce.features.inventory'),
+                  translate('services.ecommerce.features.tracking'),
+                  translate('services.ecommerce.features.analytics')
+                ],
+                gradient: 'from-pink-500 to-rose-600'
+              }
+            ].map((service, index) => {
               const IconComponent = service.icon;
               return (
                 <div key={index} className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
@@ -451,14 +534,107 @@ const Services: React.FC = () => {
       <section className="py-20 bg-gray-50 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Transparent Pricing</h2>
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">{translate('services.packages.title')}</h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              Choose the package that fits your needs. All packages include AI integration and ongoing support.
+              {translate('services.packages.subtitle')}
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {packages.map((pkg) => (
+            {[
+              {
+                id: 'starter',
+                name: translate('services.packages.starter.name'),
+                price: '€2,999',
+                originalPrice: '€4,999',
+                savings: '€2,000',
+                description: translate('services.packages.starter.description'),
+                features: [
+                  translate('services.packages.starter.features.website'),
+                  translate('services.packages.starter.features.responsive'),
+                  translate('services.packages.starter.features.seo'),
+                  translate('services.packages.starter.features.contact'),
+                  translate('services.packages.starter.features.analytics'),
+                  translate('services.packages.starter.features.support'),
+                  translate('services.packages.starter.features.chatbot'),
+                  translate('services.packages.starter.features.social')
+                ],
+                deliveryTime: translate('services.packages.starter.delivery'),
+                popular: false,
+                gradient: 'from-gray-500 to-gray-600'
+              },
+              {
+                id: 'professional',
+                name: translate('services.packages.professional.name'),
+                price: '€7,999',
+                originalPrice: '€12,999',
+                savings: '€5,000',
+                description: translate('services.packages.professional.description'),
+                features: [
+                  translate('services.packages.professional.features.website'),
+                  translate('services.packages.professional.features.chatbot'),
+                  translate('services.packages.professional.features.booking'),
+                  translate('services.packages.professional.features.payment'),
+                  translate('services.packages.professional.features.analytics'),
+                  translate('services.packages.professional.features.cms'),
+                  translate('services.packages.professional.features.support'),
+                  translate('services.packages.professional.features.seo'),
+                  translate('services.packages.professional.features.performance'),
+                  translate('services.packages.professional.features.security')
+                ],
+                deliveryTime: translate('services.packages.professional.delivery'),
+                popular: true,
+                gradient: 'from-blue-500 to-purple-600'
+              },
+              {
+                id: 'enterprise',
+                name: translate('services.packages.enterprise.name'),
+                price: '€19,999',
+                originalPrice: '€34,999',
+                savings: '€15,000',
+                description: translate('services.packages.enterprise.description'),
+                features: [
+                  translate('services.packages.enterprise.features.webapp'),
+                  translate('services.packages.enterprise.features.mobile'),
+                  translate('services.packages.enterprise.features.ai'),
+                  translate('services.packages.enterprise.features.booking'),
+                  translate('services.packages.enterprise.features.bi'),
+                  translate('services.packages.enterprise.features.multilang'),
+                  translate('services.packages.enterprise.features.support'),
+                  translate('services.packages.enterprise.features.training'),
+                  translate('services.packages.enterprise.features.api'),
+                  translate('services.packages.enterprise.features.integrations'),
+                  translate('services.packages.enterprise.features.security'),
+                  translate('services.packages.enterprise.features.architecture')
+                ],
+                deliveryTime: translate('services.packages.enterprise.delivery'),
+                popular: false,
+                gradient: 'from-purple-600 to-pink-600'
+              },
+              {
+                id: 'custom',
+                name: translate('services.packages.custom.name'),
+                price: 'From €25,000',
+                originalPrice: null,
+                savings: null,
+                description: translate('services.packages.custom.description'),
+                features: [
+                  translate('services.packages.custom.features.development'),
+                  translate('services.packages.custom.features.unlimited'),
+                  translate('services.packages.custom.features.ai'),
+                  translate('services.packages.custom.features.integrations'),
+                  translate('services.packages.custom.features.manager'),
+                  translate('services.packages.custom.features.support'),
+                  translate('services.packages.custom.features.maintenance'),
+                  translate('services.packages.custom.features.guarantees'),
+                  translate('services.packages.custom.features.scalability'),
+                  translate('services.packages.custom.features.audits')
+                ],
+                deliveryTime: translate('services.packages.custom.delivery'),
+                popular: false,
+                gradient: 'from-indigo-600 to-purple-700'
+              }
+            ].map((pkg) => (
               <div
                 key={pkg.id}
                 className={`relative bg-white dark:bg-gray-900 rounded-3xl p-8 border-2 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl ${
@@ -470,7 +646,7 @@ const Services: React.FC = () => {
                 {pkg.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                     <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full text-sm font-medium shadow-lg">
-                      Most Popular
+                      {translate('mind.pricing.popular')}
                     </div>
                   </div>
                 )}
@@ -512,7 +688,7 @@ const Services: React.FC = () => {
                         : 'bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-600'
                   }`}
                 >
-                  {pkg.id === 'custom' ? 'Get Custom Quote' : 'Get Started'}
+                  {pkg.id === 'custom' ? translate('services.packages.custom.cta') : translate('services.packages.cta')}
                 </button>
               </div>
             ))}
@@ -520,20 +696,20 @@ const Services: React.FC = () => {
 
           <div className="text-center mt-12">
             <p className="text-gray-600 dark:text-gray-400 mb-6">
-              All packages include free consultation • 30-day support • Money-back guarantee
+              {translate('services.packages.note')}
             </p>
             <div className="flex justify-center space-x-8 text-sm text-gray-500 dark:text-gray-400">
               <div className="flex items-center space-x-2">
                 <Shield className="h-4 w-4" />
-                <span>Secure Development</span>
+                <span>{translate('services.packages.features.secure')}</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Zap className="h-4 w-4" />
-                <span>Fast Delivery</span>
+                <span>{translate('services.packages.features.fast')}</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Users className="h-4 w-4" />
-                <span>Expert Support</span>
+                <span>{translate('services.packages.features.support')}</span>
               </div>
             </div>
           </div>
@@ -544,26 +720,62 @@ const Services: React.FC = () => {
       <section className="py-20 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Our Development Process</h2>
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">{translate('services.process.title')}</h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              Our proven methodology ensures high-quality delivery on time and within budget.
+              {translate('services.process.subtitle')}
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
-            {process.map((step, index) => {
-              const IconComponent = step.icon;
+            {[
+              {
+                step: '01',
+                title: translate('services.process.discovery.title'),
+                description: translate('services.process.discovery.description'),
+                duration: translate('services.process.discovery.duration'),
+                icon: Users
+              },
+              {
+                step: '02',
+                title: translate('services.process.design.title'),
+                description: translate('services.process.design.description'),
+                duration: translate('services.process.design.duration'),
+                icon: Palette
+              },
+              {
+                step: '03',
+                title: translate('services.process.development.title'),
+                description: translate('services.process.development.description'),
+                duration: translate('services.process.development.duration'),
+                icon: Code
+              },
+              {
+                step: '04',
+                title: translate('services.process.testing.title'),
+                description: translate('services.process.testing.description'),
+                duration: translate('services.process.testing.duration'),
+                icon: Shield
+              },
+              {
+                step: '05',
+                title: translate('services.process.launch.title'),
+                description: translate('services.process.launch.description'),
+                duration: translate('services.process.launch.duration'),
+                icon: Zap
+              }
+            ].map((phase, index) => {
+              const IconComponent = phase.icon;
               return (
                 <div key={index} className="text-center">
                   <div className="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
-                    {step.step}
+                    {phase.step}
                   </div>
                   <div className="bg-blue-100 dark:bg-blue-900/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                     <IconComponent className="h-8 w-8 text-blue-600 dark:text-blue-400" />
                   </div>
-                  <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">{step.title}</h3>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm mb-2">{step.description}</p>
-                  <div className="text-xs text-blue-600 dark:text-blue-400 font-medium">{step.duration}</div>
+                  <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">{phase.title}</h3>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm mb-2">{phase.description}</p>
+                  <div className="text-xs text-blue-600 dark:text-blue-400 font-medium">{phase.duration}</div>
                 </div>
               );
             })}
@@ -575,14 +787,42 @@ const Services: React.FC = () => {
       <section className="py-20 bg-gray-50 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Client Success Stories</h2>
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">{translate('services.testimonials.title')}</h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              Real results from real clients who chose our services for their digital transformation.
+              {translate('services.testimonials.subtitle')}
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
+            {[
+              {
+                name: 'Glenn Miller',
+                role: 'Founder',
+                company: 'Klavierschule Glenn Miller',
+                quote: translate('services.testimonials.glenn.quote'),
+                rating: 5,
+                avatar: 'https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg?auto=compress&cs=tinysrgb&w=150',
+                results: [translate('services.testimonials.glenn.results.booking'), translate('services.testimonials.glenn.results.scheduling'), translate('services.testimonials.glenn.results.savings')]
+              },
+              {
+                name: 'Hassan Arour',
+                role: 'General Manager',
+                company: 'Hotel am Kochbrunnen',
+                quote: translate('services.testimonials.hassan.quote'),
+                rating: 5,
+                avatar: 'https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=150',
+                results: [translate('services.testimonials.hassan.results.integration'), translate('services.testimonials.hassan.results.design'), translate('services.testimonials.hassan.results.support')]
+              },
+              {
+                name: 'Martin Schneider',
+                role: 'Practice Owner',
+                company: 'Falchi Dental',
+                quote: translate('services.testimonials.martin.quote'),
+                rating: 5,
+                avatar: 'https://images.pexels.com/photos/3777943/pexels-photo-3777943.jpeg?auto=compress&cs=tinysrgb&w=150',
+                results: [translate('services.testimonials.martin.results.management'), translate('services.testimonials.martin.results.operations'), translate('services.testimonials.martin.results.value')]
+              }
+            ].map((testimonial, index) => (
               <div key={index} className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700">
                 <div className="flex items-center space-x-1 mb-6">
                   {[...Array(testimonial.rating)].map((_, i) => (
@@ -624,17 +864,17 @@ const Services: React.FC = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Transform Your Digital Presence?</h2>
+          <h2 className="text-4xl font-bold mb-6">{translate('services.cta.title')}</h2>
           <p className="text-xl text-blue-100 mb-8">
-            Join successful businesses who have revolutionized their operations with our AI-powered solutions.
+            {translate('services.cta.subtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-50 transition-colors duration-300">
-              Get Free Consultation
+              {translate('services.cta.consultation')}
             </button>
             <button className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300">
               <Download className="mr-2 h-5 w-5 inline" />
-              Download Portfolio
+              {translate('services.cta.portfolio')}
             </button>
           </div>
         </div>
