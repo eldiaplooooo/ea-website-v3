@@ -262,7 +262,7 @@ const translations: Record<string, Record<string, string>> = {
     'industry.smart': 'Smart Living',
     'industry.healthcare': 'Gesundheitswesen',
     'industry.retail': 'Einzelhandel',
-    'industry.retail.status': 'Demnächst'
+    'industry.retail.status': 'Demnächst',
     
     // Smart Living German translations
     'smartliving.hero.title': 'Smart Living & Persönliche KI',
