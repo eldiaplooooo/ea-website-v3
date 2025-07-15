@@ -19,8 +19,8 @@ const translations: Record<string, Record<string, string>> = {
     'nav.contact': 'Contact',
     
     // Header
-    'header.cta': 'Book AI Strategy Call',
-    
+    'hero.title': 'Your Business Has a Body. We Build Its Mind.',
+    'hero.subtitle': 'We architect bespoke AI infrastructures that eradicate repetitive work, amplify human potential, and unlock unprecedented levels of efficiency for your enterprise.',
     // Hero
     'hero.title': 'Your Business Has a Body. We Build Its Mind.',
     'hero.subtitle': 'We architect bespoke AI infrastructures that eradicate repetitive work, amplify human potential, and unlock unprecedented efficiency.',
@@ -35,6 +35,79 @@ const translations: Record<string, Record<string, string>> = {
     'footer.legal': 'Legal Notice',
     
     // Industries
+    // Gastronomy & Hospitality
+    'gastronomy.hero.title': 'Gastronomy & Hospitality',
+    'gastronomy.hero.subtitle': 'Transform guest experiences with intelligent reservation systems, automated customer service, and predictive analytics that elevate every touchpoint of your hospitality business.',
+    'gastronomy.hero.cta': 'Book Your Hospitality AI Demo',
+    
+    'gastronomy.solutions.title': 'Intelligent Solutions for Modern Hospitality',
+    'gastronomy.solutions.subtitle': 'From boutique hotels to restaurant chains, our AI solutions streamline operations and create memorable experiences that keep guests coming back.',
+    
+    'gastronomy.reservation.title': 'Smart Reservation Management',
+    'gastronomy.reservation.description': 'AI-powered booking system that optimizes table allocation, predicts no-shows, and maximizes seating efficiency.',
+    'gastronomy.reservation.features.pricing': 'Dynamic pricing optimization',
+    'gastronomy.reservation.features.prediction': 'No-show prediction',
+    'gastronomy.reservation.features.automation': 'Waitlist automation',
+    'gastronomy.reservation.features.sync': 'Multi-channel booking sync',
+    
+    'gastronomy.analytics.title': 'Guest Experience Analytics',
+    'gastronomy.analytics.description': 'Comprehensive insights into guest preferences, satisfaction patterns, and service optimization opportunities.',
+    'gastronomy.analytics.features.sentiment': 'Sentiment analysis from reviews',
+    'gastronomy.analytics.features.tracking': 'Preference tracking',
+    'gastronomy.analytics.features.identification': 'Service gap identification',
+    'gastronomy.analytics.features.recommendations': 'Personalized recommendations',
+    
+    'gastronomy.service.title': 'Automated Customer Service',
+    'gastronomy.service.description': 'Intelligent chatbots and voice assistants that handle inquiries, bookings, and guest requests 24/7.',
+    'gastronomy.service.features.multilang': 'Multi-language support',
+    'gastronomy.service.features.orders': 'Order management',
+    'gastronomy.service.features.faq': 'FAQ automation',
+    'gastronomy.service.features.complaints': 'Complaint resolution',
+    
+    'gastronomy.inventory.title': 'Inventory Intelligence',
+    'gastronomy.inventory.description': 'Predictive inventory management that reduces waste, prevents stockouts, and optimizes food costs.',
+    'gastronomy.inventory.features.forecasting': 'Demand forecasting',
+    'gastronomy.inventory.features.waste': 'Waste reduction',
+    'gastronomy.inventory.features.supplier': 'Supplier optimization',
+    'gastronomy.inventory.features.menu': 'Menu engineering insights',
+    
+    'gastronomy.revenue.title': 'Revenue Optimization',
+    'gastronomy.revenue.description': 'Dynamic pricing and yield management to maximize revenue per guest and optimize occupancy rates.',
+    'gastronomy.revenue.features.pricing': 'Dynamic pricing models',
+    'gastronomy.revenue.features.yield': 'Yield management',
+    'gastronomy.revenue.features.upselling': 'Upselling automation',
+    'gastronomy.revenue.features.forecasting': 'Revenue forecasting',
+    
+    'gastronomy.staff.title': 'Staff Optimization',
+    'gastronomy.staff.description': 'Intelligent scheduling and task management that ensures optimal staffing levels and service quality.',
+    'gastronomy.staff.features.scheduling': 'Demand-based scheduling',
+    'gastronomy.staff.features.automation': 'Task automation',
+    'gastronomy.staff.features.performance': 'Performance tracking',
+    'gastronomy.staff.features.training': 'Training optimization',
+    
+    'gastronomy.success.title': 'Client Success Story',
+    'gastronomy.success.hotel': 'Hotel am Kochbrunnen Wiesbaden',
+    'gastronomy.success.quote': 'Athenex transformed our guest experience with their intelligent booking system. We\'ve seen a 40% reduction in no-shows and 25% increase in customer satisfaction scores.',
+    'gastronomy.success.noshows': 'Reduction in No-shows',
+    'gastronomy.success.satisfaction': 'Increase in Satisfaction',
+    'gastronomy.success.efficiency': 'Operational Efficiency',
+    
+    'gastronomy.process.title': 'Implementation Process',
+    'gastronomy.process.subtitle': 'Our proven methodology ensures seamless integration with your existing hospitality operations.',
+    'gastronomy.process.audit.title': 'Operations Audit',
+    'gastronomy.process.audit.description': 'Comprehensive analysis of your current guest journey, reservation systems, and operational workflows.',
+    'gastronomy.process.design.title': 'Custom AI Design',
+    'gastronomy.process.design.description': 'Tailored AI architecture designed specifically for your property type, guest demographics, and service standards.',
+    'gastronomy.process.integration.title': 'Seamless Integration',
+    'gastronomy.process.integration.description': 'Careful implementation with minimal disruption to daily operations and comprehensive staff training.',
+    'gastronomy.process.optimization.title': 'Continuous Optimization',
+    'gastronomy.process.optimization.description': 'Ongoing performance monitoring and system refinement to ensure maximum ROI and guest satisfaction.',
+    
+    'gastronomy.cta.title': 'Ready to Transform Your Guest Experience?',
+    'gastronomy.cta.subtitle': 'Join leading hospitality brands that have revolutionized their operations with Athenex AI technology.',
+    'gastronomy.cta.demo': 'Schedule Your Demo',
+    'gastronomy.cta.casestudy': 'Download Case Study',
+
     'industry.gastronomy': 'Gastronomy & Hospitality',
     'industry.industrial': 'Industrial Manufacturing',
     'industry.finance': 'Finance & Security',
@@ -653,8 +726,8 @@ const translations: Record<string, Record<string, string>> = {
     'nav.contact': 'Kontakt',
     
     // Header
-    'header.cta': 'KI-Strategiegespräch buchen',
-    
+    'hero.title': 'Ihr Unternehmen hat einen Körper. Wir bauen seinen Verstand.',
+    'hero.subtitle': 'Wir entwickeln maßgeschneiderte KI-Infrastrukturen, die repetitive Arbeit eliminieren, menschliches Potenzial verstärken und beispiellose Effizienzlevel für Ihr Unternehmen freischalten.',
     // Hero
     'hero.title': 'Ihr Unternehmen hat einen Körper. Wir bauen seinen Verstand.',
     'hero.subtitle': 'Wir entwickeln maßgeschneiderte KI-Infrastrukturen, die repetitive Arbeit beseitigen, menschliches Potenzial verstärken und beispiellose Effizienz freisetzen.',
@@ -669,6 +742,79 @@ const translations: Record<string, Record<string, string>> = {
     'footer.legal': 'Impressum',
     
     // Industries
+    // Gastronomy & Hospitality
+    'gastronomy.hero.title': 'Gastronomie & Gastgewerbe',
+    'gastronomy.hero.subtitle': 'Transformieren Sie Gästeerlebnisse mit intelligenten Reservierungssystemen, automatisiertem Kundenservice und prädiktiver Analytik, die jeden Berührungspunkt Ihres Gastgewerbes verbessert.',
+    'gastronomy.hero.cta': 'Buchen Sie Ihre Gastgewerbe-KI-Demo',
+    
+    'gastronomy.solutions.title': 'Intelligente Lösungen für modernes Gastgewerbe',
+    'gastronomy.solutions.subtitle': 'Von Boutique-Hotels bis hin zu Restaurantketten - unsere KI-Lösungen optimieren Abläufe und schaffen unvergessliche Erlebnisse, die Gäste immer wieder zurückkehren lassen.',
+    
+    'gastronomy.reservation.title': 'Intelligente Reservierungsverwaltung',
+    'gastronomy.reservation.description': 'KI-gestütztes Buchungssystem, das Tischzuteilung optimiert, No-Shows vorhersagt und die Sitzplatzeffizienz maximiert.',
+    'gastronomy.reservation.features.pricing': 'Dynamische Preisoptimierung',
+    'gastronomy.reservation.features.prediction': 'No-Show-Vorhersage',
+    'gastronomy.reservation.features.automation': 'Wartelisten-Automatisierung',
+    'gastronomy.reservation.features.sync': 'Multi-Channel-Buchungssynchronisation',
+    
+    'gastronomy.analytics.title': 'Gästeerlebnis-Analytik',
+    'gastronomy.analytics.description': 'Umfassende Einblicke in Gästepräferenzen, Zufriedenheitsmuster und Serviceoptimierungsmöglichkeiten.',
+    'gastronomy.analytics.features.sentiment': 'Sentiment-Analyse aus Bewertungen',
+    'gastronomy.analytics.features.tracking': 'Präferenz-Tracking',
+    'gastronomy.analytics.features.identification': 'Service-Lücken-Identifikation',
+    'gastronomy.analytics.features.recommendations': 'Personalisierte Empfehlungen',
+    
+    'gastronomy.service.title': 'Automatisierter Kundenservice',
+    'gastronomy.service.description': 'Intelligente Chatbots und Sprachassistenten, die Anfragen, Buchungen und Gästewünsche rund um die Uhr bearbeiten.',
+    'gastronomy.service.features.multilang': 'Mehrsprachiger Support',
+    'gastronomy.service.features.orders': 'Bestellverwaltung',
+    'gastronomy.service.features.faq': 'FAQ-Automatisierung',
+    'gastronomy.service.features.complaints': 'Beschwerdebearbeitung',
+    
+    'gastronomy.inventory.title': 'Lager-Intelligenz',
+    'gastronomy.inventory.description': 'Prädiktive Lagerverwaltung, die Verschwendung reduziert, Lagerausfälle verhindert und Lebensmittelkosten optimiert.',
+    'gastronomy.inventory.features.forecasting': 'Nachfrageprognose',
+    'gastronomy.inventory.features.waste': 'Abfallreduzierung',
+    'gastronomy.inventory.features.supplier': 'Lieferantenoptimierung',
+    'gastronomy.inventory.features.menu': 'Menü-Engineering-Einblicke',
+    
+    'gastronomy.revenue.title': 'Umsatzoptimierung',
+    'gastronomy.revenue.description': 'Dynamische Preisgestaltung und Yield-Management zur Maximierung des Umsatzes pro Gast und Optimierung der Auslastung.',
+    'gastronomy.revenue.features.pricing': 'Dynamische Preismodelle',
+    'gastronomy.revenue.features.yield': 'Yield-Management',
+    'gastronomy.revenue.features.upselling': 'Upselling-Automatisierung',
+    'gastronomy.revenue.features.forecasting': 'Umsatzprognose',
+    
+    'gastronomy.staff.title': 'Personaloptimierung',
+    'gastronomy.staff.description': 'Intelligente Planung und Aufgabenverwaltung, die optimale Personalbesetzung und Servicequalität gewährleistet.',
+    'gastronomy.staff.features.scheduling': 'Nachfragebasierte Planung',
+    'gastronomy.staff.features.automation': 'Aufgabenautomatisierung',
+    'gastronomy.staff.features.performance': 'Leistungsverfolgung',
+    'gastronomy.staff.features.training': 'Schulungsoptimierung',
+    
+    'gastronomy.success.title': 'Kundenerfolgsgeschichte',
+    'gastronomy.success.hotel': 'Hotel am Kochbrunnen Wiesbaden',
+    'gastronomy.success.quote': 'Athenex hat unser Gästeerlebnis mit ihrem intelligenten Buchungssystem transformiert. Wir haben eine 40%ige Reduzierung der No-Shows und eine 25%ige Steigerung der Kundenzufriedenheit erreicht.',
+    'gastronomy.success.noshows': 'Reduzierung der No-Shows',
+    'gastronomy.success.satisfaction': 'Steigerung der Zufriedenheit',
+    'gastronomy.success.efficiency': 'Operative Effizienz',
+    
+    'gastronomy.process.title': 'Implementierungsprozess',
+    'gastronomy.process.subtitle': 'Unsere bewährte Methodik gewährleistet eine nahtlose Integration in Ihre bestehenden Gastgewerbebetriebe.',
+    'gastronomy.process.audit.title': 'Betriebsprüfung',
+    'gastronomy.process.audit.description': 'Umfassende Analyse Ihrer aktuellen Gästejourney, Reservierungssysteme und operativen Arbeitsabläufe.',
+    'gastronomy.process.design.title': 'Maßgeschneidertes KI-Design',
+    'gastronomy.process.design.description': 'Maßgeschneiderte KI-Architektur, speziell für Ihren Immobilientyp, Gästedemografie und Servicestandards entwickelt.',
+    'gastronomy.process.integration.title': 'Nahtlose Integration',
+    'gastronomy.process.integration.description': 'Sorgfältige Implementierung mit minimaler Störung des täglichen Betriebs und umfassender Mitarbeiterschulung.',
+    'gastronomy.process.optimization.title': 'Kontinuierliche Optimierung',
+    'gastronomy.process.optimization.description': 'Laufende Leistungsüberwachung und Systemverfeinerung zur Gewährleistung maximaler ROI und Gästezufriedenheit.',
+    
+    'gastronomy.cta.title': 'Bereit, Ihr Gästeerlebnis zu transformieren?',
+    'gastronomy.cta.subtitle': 'Schließen Sie sich führenden Gastgewerbemarken an, die ihre Abläufe mit Athenex KI-Technologie revolutioniert haben.',
+    'gastronomy.cta.demo': 'Planen Sie Ihre Demo',
+    'gastronomy.cta.casestudy': 'Fallstudie herunterladen',
+
     'industry.gastronomy': 'Gastronomie & Gastgewerbe',
     'industry.industrial': 'Industrielle Fertigung',
     'industry.finance': 'Finanzen & Sicherheit',
