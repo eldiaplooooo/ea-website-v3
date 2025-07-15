@@ -3,7 +3,6 @@ import {
   Rocket, 
   Shield, 
   Zap, 
-  Award, 
   TrendingUp, 
   CheckCircle, 
   Star, 
@@ -13,8 +12,11 @@ import {
   Globe,
   Lightbulb
 } from 'lucide-react';
+import { useLanguage } from '../components/LanguageSelector';
 
 const WhyEA: React.FC = () => {
+  const { translate } = useLanguage();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -25,13 +27,18 @@ const WhyEA: React.FC = () => {
       <section className="bg-gradient-to-br from-gray-900 via-blue-900 to-gray-800 dark:from-gray-950 dark:via-blue-950 dark:to-gray-900 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">Why EA Solutions?</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">{translate('nav.why')}</h1>
             <p className="text-xl md:text-2xl text-gray-300 dark:text-gray-400 max-w-4xl mx-auto mb-8">
-              In a world flooded with generic AI solutions, we stand apart. 
-              Discover what makes EA Solutions the definitive choice for enterprise AI transformation.
+              {translate('why.advantage.subtitle')}
             </p>
-            <button className="bg-gradient-to-r from-blue-600 to-blue-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-blue-500 hover:to-blue-400 transition-all duration-300 transform hover:scale-105 shadow-xl">
-              Experience the Difference
+            <button 
+              onClick={() => {
+                const event = new CustomEvent('openBookingModal');
+                window.dispatchEvent(event);
+              }}
+              className="bg-gradient-to-r from-blue-600 to-blue-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-blue-500 hover:to-blue-400 transition-all duration-300 transform hover:scale-105 shadow-xl"
+            >
+              {translate('cta.experience')}
             </button>
           </div>
         </div>
@@ -41,9 +48,9 @@ const WhyEA: React.FC = () => {
       <section className="py-20 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">The EA Solutions Advantage</h2>
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">{translate('why.advantage.title')}</h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              We don't just implement AI – we architect intelligent ecosystems that evolve with your business.
+              {translate('why.advantage.subtitle')}
             </p>
           </div>
 
@@ -51,37 +58,37 @@ const WhyEA: React.FC = () => {
             {[
               {
                 icon: Rocket,
-                title: 'Radically Bespoke',
-                description: 'We don\'t sell software. We build solutions. Every line of code, every algorithm, and every integration is custom-architected for you.',
+                title: translate('why.bespoke.title'),
+                description: translate('why.bespoke.desc'),
                 details: [
-                  'Custom AI models trained on your data',
-                  'Tailored user interfaces and workflows',
-                  'Industry-specific optimization',
-                  'Proprietary algorithm development'
+                  'Maßgeschneiderte KI-Modelle für Ihre Daten',
+                  'Angepasste Benutzeroberflächen und Workflows',
+                  'Branchenspezifische Optimierung',
+                  'Proprietäre Algorithmusentwicklung'
                 ],
                 gradient: 'from-blue-500 to-purple-600'
               },
               {
                 icon: Brain,
-                title: 'Elite Expertise',
-                description: 'Our team consists of world-class AI engineers and strategists who live at the bleeding edge of technology.',
+                title: translate('why.expertise.title'),
+                description: translate('why.expertise.desc'),
                 details: [
-                  'PhD-level AI researchers',
-                  'Former Big Tech engineers',
-                  'Industry domain experts',
-                  'Continuous learning culture'
+                  'Erfahrene KI-Ingenieure',
+                  'Geschäftsstrategie-Experten',
+                  'Branchenspezialisten',
+                  'Kontinuierliche Weiterbildung'
                 ],
                 gradient: 'from-green-500 to-teal-600'
               },
               {
                 icon: TrendingUp,
-                title: 'Measurable Impact',
-                description: 'Our goal is your bottom line. We deliver measurable improvements in efficiency, cost reduction, and revenue generation.',
+                title: translate('why.impact.title'),
+                description: translate('why.impact.desc'),
                 details: [
-                  'Guaranteed results within 18 months',
-                  'Performance-based pricing options',
-                  'Continuous optimization',
-                  'Transparent success metrics'
+                  'Garantierte Ergebnisse innerhalb von 18 Monaten',
+                  'Leistungsbasierte Preisoptionen',
+                  'Kontinuierliche Optimierung',
+                  'Transparente Erfolgsmetriken'
                 ],
                 gradient: 'from-orange-500 to-red-600'
               }
@@ -258,59 +265,6 @@ const WhyEA: React.FC = () => {
         </div>
       </section>
 
-      {/* Awards & Recognition */}
-      <section className="py-20 bg-gray-900 dark:bg-gray-950 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Awards & Recognition</h2>
-            <p className="text-xl text-gray-300 dark:text-gray-400 max-w-3xl mx-auto">
-              Our commitment to excellence has been recognized by industry leaders and organizations worldwide.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                icon: Award,
-                title: 'AI Innovation Award',
-                organization: 'Tech Excellence 2024',
-                description: 'Recognized for breakthrough AI implementation methodology'
-              },
-              {
-                icon: Shield,
-                title: 'Security Excellence',
-                organization: 'CyberSec Awards',
-                description: 'Outstanding achievement in AI security and privacy protection'
-              },
-              {
-                icon: Users,
-                title: 'Client Satisfaction',
-                organization: 'Industry Survey',
-                description: '98% client satisfaction rate across all projects'
-              },
-              {
-                icon: TrendingUp,
-                title: 'Growth Leader',
-                organization: 'Business Journal',
-                description: 'Fastest growing AI consulting firm in Europe'
-              }
-            ].map((award, index) => {
-              const IconComponent = award.icon;
-              return (
-                <div key={index} className="text-center">
-                  <div className="bg-blue-600 dark:bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <IconComponent className="h-8 w-8 text-white" />
-                  </div>
-                  <h3 className="text-lg font-bold mb-2">{award.title}</h3>
-                  <div className="text-blue-400 dark:text-blue-300 font-semibold mb-2">{award.organization}</div>
-                  <p className="text-gray-300 dark:text-gray-400 text-sm">{award.description}</p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
       {/* Team Expertise */}
       <section className="py-20 bg-blue-50 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -362,16 +316,29 @@ const WhyEA: React.FC = () => {
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-blue-900 to-blue-800 dark:from-blue-950 dark:to-blue-900 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Experience the EA Difference?</h2>
+          <h2 className="text-4xl font-bold mb-6">{translate('why.cta.title')}</h2>
           <p className="text-xl text-blue-100 dark:text-blue-200 mb-8">
-            Join the growing number of industry leaders who have chosen EA Solutions for their AI transformation journey.
+            {translate('why.cta.subtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-blue-900 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-50 transition-colors duration-300">
-              Schedule Your Strategy Call
+            <button 
+              onClick={() => {
+                const event = new CustomEvent('openBookingModal');
+                window.dispatchEvent(event);
+              }}
+              className="bg-white text-blue-900 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-50 transition-colors duration-300"
+            >
+              {translate('cta.schedule')}
             </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-900 transition-all duration-300">
-              Download Our Portfolio
+            <button 
+              onClick={() => {
+                const link = document.createElement('a');
+                link.href = 'mailto:ali.h@easolutions.de?subject=Portfolio Request&body=Please send me your company portfolio and case studies.';
+                link.click();
+              }}
+              className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-900 transition-all duration-300"
+            >
+              {translate('cta.portfolio')}
             </button>
           </div>
         </div>

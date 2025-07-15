@@ -13,6 +13,19 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
   const { isDark } = useTheme();
 
+  // Listen for custom booking modal events
+  useEffect(() => {
+    const handleOpenBookingModal = () => {
+      setIsBookingModalOpen(true);
+    };
+
+    window.addEventListener('openBookingModal', handleOpenBookingModal);
+
+    return () => {
+      window.removeEventListener('openBookingModal', handleOpenBookingModal);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col bg-white dark:bg-gray-900 transition-colors duration-300">
       <Header onBookingClick={() => setIsBookingModalOpen(true)} />

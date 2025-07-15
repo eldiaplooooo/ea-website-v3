@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Search, Lightbulb, Cog, TrendingUp, CheckCircle, Users, Target, Zap } from 'lucide-react';
+import { useLanguage } from '../components/LanguageSelector';
 
 const EAMethod: React.FC = () => {
+  const { translate } = useLanguage();
   const [visibleSteps, setVisibleSteps] = useState<number[]>([]);
   const stepsRef = useRef<(HTMLDivElement | null)[]>([]);
 
@@ -35,13 +37,25 @@ const EAMethod: React.FC = () => {
       <section className="bg-gradient-to-br from-gray-900 via-blue-900 to-gray-800 dark:from-gray-950 dark:via-blue-950 dark:to-gray-900 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">The EA Method</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">{translate('method.title')}</h1>
             <p className="text-xl md:text-2xl text-gray-300 dark:text-gray-400 max-w-4xl mx-auto mb-8">
-              Our proven methodology ensures your AI transformation is seamless, strategic, and sustainable. 
-              Every step is designed to maximize value while minimizing disruption.
+              {translate('method.subtitle')}
             </p>
-            <button className="bg-gradient-to-r from-blue-600 to-blue-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-blue-500 hover:to-blue-400 transition-all duration-300 transform hover:scale-105 shadow-xl">
-              Start Your AI Journey
+            <button 
+              onClick={() => {
+                // Scroll to contact section or open booking modal
+                const contactSection = document.getElementById('contact-section');
+                if (contactSection) {
+                  contactSection.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  // Trigger booking modal
+                  const event = new CustomEvent('openBookingModal');
+                  window.dispatchEvent(event);
+                }
+              }}
+              className="bg-gradient-to-r from-blue-600 to-blue-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-blue-500 hover:to-blue-400 transition-all duration-300 transform hover:scale-105 shadow-xl"
+            >
+              {translate('cta.start')}
             </button>
           </div>
         </div>
@@ -52,11 +66,10 @@ const EAMethod: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-light text-gray-900 dark:text-white mb-6 tracking-tight">
-              Four Stages to AI Excellence
+              {translate('method.phases.title')}
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto font-light">
-              Our comprehensive approach ensures every aspect of your AI implementation is carefully planned, 
-              expertly executed, and continuously optimized for maximum impact.
+              {translate('method.phases.subtitle')}
             </p>
           </div>
 
@@ -133,8 +146,8 @@ const EAMethod: React.FC = () => {
               {[
                 {
                   number: '01',
-                  title: 'Deep Dive & Discovery',
-                  description: 'We embed with your team to map every process, identify bottlenecks, and understand your ultimate goals. We don\'t just listen; we analyze.',
+                  title: translate('method.phase1.title'),
+                  description: translate('method.phase1.desc'),
                   duration: '2-4 weeks',
                   icon: Search,
                   gradient: 'from-blue-500 to-cyan-500',
@@ -143,8 +156,8 @@ const EAMethod: React.FC = () => {
                 },
                 {
                   number: '02',
-                  title: 'Architectural Design',
-                  description: 'We design a bespoke AI blueprint for your business, selecting the optimal blend of local and external LLMs and integrating with your existing tech stack.',
+                  title: translate('method.phase2.title'),
+                  description: translate('method.phase2.desc'),
                   duration: '3-5 weeks',
                   icon: Lightbulb,
                   gradient: 'from-green-500 to-emerald-500',
@@ -153,8 +166,8 @@ const EAMethod: React.FC = () => {
                 },
                 {
                   number: '03',
-                  title: 'Seamless Implementation',
-                  description: 'Our elite engineers build and deploy your AI infrastructure with military precision, ensuring minimal disruption and maximum adoption.',
+                  title: translate('method.phase3.title'),
+                  description: translate('method.phase3.desc'),
                   duration: '6-12 weeks',
                   icon: Cog,
                   gradient: 'from-orange-500 to-red-500',
@@ -163,8 +176,8 @@ const EAMethod: React.FC = () => {
                 },
                 {
                   number: '04',
-                  title: 'Evolution & Enhancement',
-                  description: 'Your AI mind is a living entity. We provide continuous optimization, performance monitoring, and enhancement to ensure it grows with your business.',
+                  title: translate('method.phase4.title'),
+                  description: translate('method.phase4.desc'),
                   duration: 'Ongoing',
                   icon: TrendingUp,
                   gradient: 'from-purple-500 to-pink-500',
@@ -246,8 +259,14 @@ const EAMethod: React.FC = () => {
           </div>
 
           <div className="text-center mt-20">
-            <button className="inline-flex items-center bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-10 py-4 rounded-full font-medium hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors duration-300 shadow-xl">
-              Learn More About Our Process
+            <button 
+              onClick={() => {
+                // Navigate to why-ea page or open detailed process guide
+                window.location.href = '/why-ea';
+              }}
+              className="inline-flex items-center bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-10 py-4 rounded-full font-medium hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors duration-300 shadow-xl"
+            >
+              {translate('cta.learn')}
               <TrendingUp className="ml-3 h-5 w-5" />
             </button>
           </div>
@@ -258,9 +277,9 @@ const EAMethod: React.FC = () => {
       <section className="py-20 bg-gray-50 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Proven Results</h2>
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">{translate('method.results.title')}</h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              Our methodology consistently delivers measurable results across all industries and project types.
+              {translate('method.results.subtitle')}
             </p>
           </div>
 
@@ -305,16 +324,30 @@ const EAMethod: React.FC = () => {
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-blue-900 to-blue-800 dark:from-blue-950 dark:to-blue-900 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Experience the EA Method?</h2>
+          <h2 className="text-4xl font-bold mb-6">{translate('method.cta.title')}</h2>
           <p className="text-xl text-blue-100 dark:text-blue-200 mb-8">
-            Join industry leaders who have transformed their operations with our proven AI implementation methodology.
+            {translate('method.cta.subtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-blue-900 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-50 transition-colors duration-300">
-              Start Your Discovery Phase
+            <button 
+              onClick={() => {
+                const event = new CustomEvent('openBookingModal');
+                window.dispatchEvent(event);
+              }}
+              className="bg-white text-blue-900 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-50 transition-colors duration-300"
+            >
+              {translate('cta.discovery')}
             </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-900 transition-all duration-300">
-              Download Methodology Guide
+            <button 
+              onClick={() => {
+                // Create a downloadable PDF or redirect to resource
+                const link = document.createElement('a');
+                link.href = 'mailto:ali.h@easolutions.de?subject=Methodology Guide Request&body=Please send me the EA Method methodology guide.';
+                link.click();
+              }}
+              className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-900 transition-all duration-300"
+            >
+              {translate('cta.download')}
             </button>
           </div>
         </div>

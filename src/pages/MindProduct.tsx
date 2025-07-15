@@ -340,7 +340,13 @@ const MindProduct: React.FC = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
-              <button className="group bg-gradient-to-r from-purple-600 to-pink-600 text-white px-12 py-4 rounded-full text-lg font-medium hover:from-purple-500 hover:to-pink-500 transition-all duration-300 transform hover:scale-105 shadow-xl">
+              <button 
+                onClick={() => {
+                  const event = new CustomEvent('openBookingModal');
+                  window.dispatchEvent(event);
+                }}
+                className="group bg-gradient-to-r from-purple-600 to-pink-600 text-white px-12 py-4 rounded-full text-lg font-medium hover:from-purple-500 hover:to-pink-500 transition-all duration-300 transform hover:scale-105 shadow-xl"
+              >
                 <div className="flex items-center space-x-2">
                   <Rocket className="h-5 w-5 group-hover:animate-bounce" />
                   <span>{translate('mind.cta.start')}</span>
@@ -820,13 +826,25 @@ const MindProduct: React.FC = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
-            <button className="group bg-gradient-to-r from-purple-600 to-pink-600 text-white px-12 py-4 rounded-full text-lg font-medium hover:from-purple-500 hover:to-pink-500 transition-all duration-300 transform hover:scale-105 shadow-xl">
+            <button 
+              onClick={() => {
+                const event = new CustomEvent('openBookingModal');
+                window.dispatchEvent(event);
+              }}
+              className="group bg-gradient-to-r from-purple-600 to-pink-600 text-white px-12 py-4 rounded-full text-lg font-medium hover:from-purple-500 hover:to-pink-500 transition-all duration-300 transform hover:scale-105 shadow-xl"
+            >
               <div className="flex items-center space-x-2">
                 <Rocket className="h-5 w-5 group-hover:animate-bounce" />
                 <span>{translate('mind.cta.trial')}</span>
               </div>
             </button>
-            <button className="group border-2 border-white text-white px-12 py-4 rounded-full text-lg font-medium hover:bg-white hover:text-gray-900 transition-all duration-300">
+            <button 
+              onClick={() => {
+                const event = new CustomEvent('openBookingModal');
+                window.dispatchEvent(event);
+              }}
+              className="group border-2 border-white text-white px-12 py-4 rounded-full text-lg font-medium hover:bg-white hover:text-gray-900 transition-all duration-300"
+            >
               <div className="flex items-center space-x-2">
                 <Phone className="h-5 w-5 group-hover:scale-110 transition-transform" />
                 <span>{translate('mind.cta.schedule')}</span>
