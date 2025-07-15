@@ -194,23 +194,23 @@ const GastronomyHospitality: React.FC = () => {
             {[
               {
                 step: '01',
-                title: 'Operations Audit',
-                description: 'Comprehensive analysis of your current processes, systems, and guest journey touchpoints.'
+                title: translate('gastronomy.implementation.phase1.title'),
+                description: translate('gastronomy.implementation.phase1.description')
               },
               {
                 step: '02',
-                title: 'Solution Design',
-                description: 'Custom AI architecture designed specifically for your hospitality needs and guest experience goals.'
+                title: translate('gastronomy.implementation.phase2.title'),
+                description: translate('gastronomy.implementation.phase2.description')
               },
               {
                 step: '03',
-                title: 'System Integration',
-                description: 'Seamless integration with your existing PMS, booking systems, and operational workflows.'
+                title: translate('gastronomy.implementation.phase3.title'),
+                description: translate('gastronomy.implementation.phase3.description')
               },
               {
                 step: '04',
-                title: 'Continuous Optimization',
-                description: 'Ongoing monitoring, learning, and optimization to maximize guest satisfaction and revenue.'
+                title: translate('gastronomy.implementation.phase4.title'),
+                description: translate('gastronomy.implementation.phase4.description')
               }
             ].map((phase, index) => (
               <div key={index} className="text-center">

@@ -233,14 +233,14 @@ const IndustrialManufacturing: React.FC = () => {
               {[
                 {
                   phase: 'Phase 3',
-                  title: 'Implementation & Integration',
-                  description: 'Deployment of AI systems with seamless integration into your existing manufacturing infrastructure.',
+                  title: translate('industrial.implementation.phase3.title'),
+                  description: translate('industrial.implementation.phase3.description'),
                   duration: '6-8 weeks'
                 },
                 {
                   phase: 'Phase 4',
-                  title: 'Optimization & Support',
-                  description: 'Continuous monitoring, optimization, and support to ensure maximum performance and ROI.',
+                  title: translate('industrial.implementation.phase4.title'),
+                  description: translate('industrial.implementation.phase4.description'),
                   duration: 'Ongoing'
                 }
               ].map((phase, index) => (
