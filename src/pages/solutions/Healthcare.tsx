@@ -165,9 +165,11 @@ const Healthcare: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gray-50 rounded-2xl p-8 md:p-12">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
                   <h2 className="text-3xl font-bold text-gray-900 mb-6">{translate('healthcare.success.title')}</h2>
                   <h3 className="text-2xl font-semibold text-pink-600 mb-4">{translate('healthcare.success.company')}</h3>
                 <h3 className="text-2xl font-semibold text-pink-600 mb-4">Falchi Dental Wiesbaden</h3>
+                <p className="text-gray-700 mb-6">
                     "{translate('healthcare.success.quote')}"
                   improvements in treatment accuracy and patient satisfaction, while reducing diagnostic time by 40%."
                 </p>
@@ -175,18 +177,21 @@ const Healthcare: React.FC = () => {
                   <div className="flex items-center space-x-3">
                     <div className="w-8 h-8 bg-pink-600 rounded-full flex items-center justify-center">
                       <span className="text-white font-bold">✓</span>
+                    </div>
                       <span className="text-gray-700">{translate('healthcare.success.results.time')}</span>
                     <span className="text-gray-700">40% reduction in diagnostic time</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-8 h-8 bg-pink-600 rounded-full flex items-center justify-center">
                       <span className="text-white font-bold">✓</span>
+                    </div>
                       <span className="text-gray-700">{translate('healthcare.success.results.accuracy')}</span>
                     <span className="text-gray-700">95% improvement in treatment accuracy</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-8 h-8 bg-pink-600 rounded-full flex items-center justify-center">
                       <span className="text-white font-bold">✓</span>
+                    </div>
                       <span className="text-gray-700">{translate('healthcare.success.results.experience')}</span>
                     <span className="text-gray-700">Enhanced patient experience</span>
                   </div>
