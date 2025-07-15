@@ -14,10 +14,10 @@ const GastronomyHospitality: React.FC = () => {
             <div>
               <div className="flex items-center space-x-3 mb-6">
                 <Utensils className="h-12 w-12" />
-                <h1 className="text-4xl md:text-5xl font-bold">{translate('gastronomy.hero.title')}</h1>
+                <h1 className="text-4xl md:text-5xl font-bold">Gastronomy & Hospitality</h1>
               </div>
               <p className="text-xl text-orange-100 mb-8">
-                {translate('gastronomy.hero.subtitle')}
+                Transform guest experiences with intelligent reservation systems, automated customer service, and predictive analytics for inventory management.
               </p>
               <button 
                 onClick={() => {
@@ -26,13 +26,13 @@ const GastronomyHospitality: React.FC = () => {
                 }}
                 className="bg-white text-orange-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-orange-50 transition-colors duration-300"
               >
-                {translate('gastronomy.hero.cta')}
+                Book Your Hospitality AI Demo
               </button>
             </div>
             <div className="bg-white bg-opacity-10 rounded-2xl p-8 backdrop-blur-sm">
               <img 
                 src="https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" 
-                alt={translate('gastronomy.hero.title')} 
+                alt="Gastronomy & Hospitality" 
                 className="w-full h-64 object-cover rounded-lg"
               />
             </div>
@@ -44,9 +44,9 @@ const GastronomyHospitality: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">{translate('gastronomy.solutions.title')}</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Intelligent Hospitality Solutions</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              {translate('gastronomy.solutions.subtitle')}
+              From smart reservations to predictive analytics, our AI solutions transform every aspect of your hospitality operations.
             </p>
           </div>
 
@@ -54,68 +54,68 @@ const GastronomyHospitality: React.FC = () => {
             {[
               {
                 icon: Users,
-                title: translate('gastronomy.reservation.title'),
-                description: translate('gastronomy.reservation.description'),
+                title: 'Smart Reservation Management',
+                description: 'AI-powered booking system with dynamic pricing, no-show prediction, and automated guest communication.',
                 features: [
-                  translate('gastronomy.reservation.features.pricing'),
-                  translate('gastronomy.reservation.features.prediction'),
-                  translate('gastronomy.reservation.features.automation'),
-                  translate('gastronomy.reservation.features.sync')
+                  'Dynamic pricing optimization',
+                  'No-show prediction algorithms',
+                  'Automated guest communication',
+                  'Real-time availability sync'
                 ]
               },
               {
                 icon: BarChart3,
-                title: translate('gastronomy.analytics.title'),
-                description: translate('gastronomy.analytics.description'),
+                title: 'Guest Experience Analytics',
+                description: 'Advanced analytics to understand guest preferences, sentiment, and behavior patterns.',
                 features: [
-                  translate('gastronomy.analytics.features.sentiment'),
-                  translate('gastronomy.analytics.features.tracking'),
-                  translate('gastronomy.analytics.features.identification'),
-                  translate('gastronomy.analytics.features.recommendations')
+                  'Sentiment analysis from reviews',
+                  'Guest preference tracking',
+                  'VIP guest identification',
+                  'Personalized recommendations'
                 ]
               },
               {
                 icon: Clock,
-                title: translate('gastronomy.service.title'),
-                description: translate('gastronomy.service.description'),
+                title: 'Automated Customer Service',
+                description: 'AI chatbots and virtual assistants that handle inquiries, bookings, and guest services 24/7.',
                 features: [
-                  translate('gastronomy.service.features.multilang'),
-                  translate('gastronomy.service.features.orders'),
-                  translate('gastronomy.service.features.faq'),
-                  translate('gastronomy.service.features.complaints')
+                  'Multi-language support',
+                  'Order taking and modifications',
+                  'FAQ automation',
+                  'Complaint resolution'
                 ]
               },
               {
                 icon: Shield,
-                title: translate('gastronomy.inventory.title'),
-                description: translate('gastronomy.inventory.description'),
+                title: 'Intelligent Inventory Management',
+                description: 'Predictive inventory system that reduces waste and ensures optimal stock levels.',
                 features: [
-                  translate('gastronomy.inventory.features.forecasting'),
-                  translate('gastronomy.inventory.features.waste'),
-                  translate('gastronomy.inventory.features.supplier'),
-                  translate('gastronomy.inventory.features.menu')
+                  'Demand forecasting',
+                  'Waste reduction algorithms',
+                  'Supplier optimization',
+                  'Menu engineering insights'
                 ]
               },
               {
                 icon: Zap,
-                title: translate('gastronomy.revenue.title'),
-                description: translate('gastronomy.revenue.description'),
+                title: 'Revenue Optimization',
+                description: 'AI-driven pricing strategies and upselling recommendations to maximize revenue per guest.',
                 features: [
-                  translate('gastronomy.revenue.features.pricing'),
-                  translate('gastronomy.revenue.features.yield'),
-                  translate('gastronomy.revenue.features.upselling'),
-                  translate('gastronomy.revenue.features.forecasting')
+                  'Dynamic pricing strategies',
+                  'Yield management',
+                  'Automated upselling',
+                  'Revenue forecasting'
                 ]
               },
               {
                 icon: Users,
-                title: translate('gastronomy.staff.title'),
-                description: translate('gastronomy.staff.description'),
+                title: 'Staff Optimization',
+                description: 'Intelligent scheduling and task management to optimize staff productivity and guest service.',
                 features: [
-                  translate('gastronomy.staff.features.scheduling'),
-                  translate('gastronomy.staff.features.automation'),
-                  translate('gastronomy.staff.features.performance'),
-                  translate('gastronomy.staff.features.training')
+                  'Smart scheduling algorithms',
+                  'Task automation',
+                  'Performance analytics',
+                  'Training recommendations'
                 ]
               }
             ].map((solution, index) => {
@@ -148,23 +148,23 @@ const GastronomyHospitality: React.FC = () => {
           <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">{translate('gastronomy.success.title')}</h2>
-                <h3 className="text-2xl font-semibold text-orange-600 mb-4">{translate('gastronomy.success.hotel')}</h3>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6">Success Story</h2>
+                <h3 className="text-2xl font-semibold text-orange-600 mb-4">Hotel am Kochbrunnen</h3>
                 <p className="text-lg text-gray-600 mb-6">
-                  "{translate('gastronomy.success.quote')}"
+                  "EA Solutions transformed our entire hospitality operation. The AI-powered systems have revolutionized how we manage reservations, serve guests, and optimize our operations."
                 </p>
                 <div className="grid grid-cols-3 gap-6">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-orange-600">40%</div>
-                    <div className="text-sm text-gray-600">{translate('gastronomy.success.noshows')}</div>
+                    <div className="text-sm text-gray-600">Reduction in no-shows</div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-orange-600">25%</div>
-                    <div className="text-sm text-gray-600">{translate('gastronomy.success.satisfaction')}</div>
+                    <div className="text-sm text-gray-600">Increase in satisfaction</div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-orange-600">30%</div>
-                    <div className="text-sm text-gray-600">{translate('gastronomy.success.efficiency')}</div>
+                    <div className="text-sm text-gray-600">Operational efficiency gain</div>
                   </div>
                 </div>
               </div>
@@ -184,9 +184,9 @@ const GastronomyHospitality: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">{translate('gastronomy.process.title')}</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Implementation Process</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              {translate('gastronomy.process.subtitle')}
+              Our proven 4-step process ensures seamless integration of AI solutions into your hospitality operations.
             </p>
           </div>
 
@@ -194,23 +194,23 @@ const GastronomyHospitality: React.FC = () => {
             {[
               {
                 step: '01',
-                title: translate('gastronomy.process.audit.title'),
-                description: translate('gastronomy.process.audit.description')
+                title: 'Operations Audit',
+                description: 'Comprehensive analysis of your current processes, systems, and guest journey touchpoints.'
               },
               {
                 step: '02',
-                title: translate('gastronomy.process.design.title'),
-                description: translate('gastronomy.process.design.description')
+                title: 'Solution Design',
+                description: 'Custom AI architecture designed specifically for your hospitality needs and guest experience goals.'
               },
               {
                 step: '03',
-                title: translate('gastronomy.process.integration.title'),
-                description: translate('gastronomy.process.integration.description')
+                title: 'System Integration',
+                description: 'Seamless integration with your existing PMS, booking systems, and operational workflows.'
               },
               {
                 step: '04',
-                title: translate('gastronomy.process.optimization.title'),
-                description: translate('gastronomy.process.optimization.description')
+                title: 'Continuous Optimization',
+                description: 'Ongoing monitoring, learning, and optimization to maximize guest satisfaction and revenue.'
               }
             ].map((phase, index) => (
               <div key={index} className="text-center">
@@ -228,9 +228,9 @@ const GastronomyHospitality: React.FC = () => {
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-orange-500 to-red-500 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">{translate('gastronomy.cta.title')}</h2>
+          <h2 className="text-4xl font-bold mb-6">Ready to Transform Your Hospitality Business?</h2>
           <p className="text-xl text-orange-100 mb-8">
-            {translate('gastronomy.cta.subtitle')}
+            Join leading hotels and restaurants that have revolutionized their operations with EA Solutions' hospitality AI.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button 
@@ -240,17 +240,17 @@ const GastronomyHospitality: React.FC = () => {
               }}
               className="bg-white text-orange-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-orange-50 transition-colors duration-300"
             >
-              {translate('gastronomy.cta.demo')}
+              Book Your Hospitality Demo
             </button>
             <button 
               onClick={() => {
                 const link = document.createElement('a');
-                link.href = 'mailto:ali.h@athenex.de?subject=Case Study Request&body=Please send me the hospitality case study.';
+                link.href = 'mailto:ali.h@easolutions.de?subject=Case Study Request&body=Please send me the hospitality case study.';
                 link.click();
               }}
               className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-orange-600 transition-all duration-300"
             >
-              {translate('gastronomy.cta.casestudy')}
+              Download Case Study
             </button>
           </div>
         </div>
