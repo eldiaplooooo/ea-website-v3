@@ -10,7 +10,8 @@ import {
   Target,
   Brain,
   Globe,
-  Lightbulb
+  Lightbulb,
+  Award
 } from 'lucide-react';
 import { useLanguage } from '../components/LanguageSelector';
 
