@@ -107,6 +107,87 @@ const translations: Record<string, Record<string, string>> = {
     'gastronomy.cta.subtitle': 'Join leading hospitality brands that have revolutionized their operations with Athenex AI technology.',
     'gastronomy.cta.demo': 'Schedule Your Demo',
     'gastronomy.cta.casestudy': 'Download Case Study',
+    
+    // Industrial & Manufacturing
+    'industrial.hero.title': 'Industrial & Manufacturing',
+    'industrial.hero.subtitle': 'Optimize production efficiency with predictive maintenance, quality control automation, and intelligent supply chain management that transforms your manufacturing operations.',
+    'industrial.hero.cta': 'Book Your Manufacturing AI Demo',
+    
+    'industrial.solutions.title': 'Smart Manufacturing Solutions',
+    'industrial.solutions.subtitle': 'From predictive maintenance to quality assurance, our AI solutions optimize every aspect of your manufacturing process for maximum efficiency and minimal downtime.',
+    
+    'industrial.predictive.title': 'Predictive Maintenance',
+    'industrial.predictive.description': 'AI-powered monitoring systems that predict equipment failures before they occur, reducing downtime by up to 70%.',
+    'industrial.predictive.features.monitoring': 'Real-time equipment monitoring',
+    'industrial.predictive.features.prediction': 'Failure prediction algorithms',
+    'industrial.predictive.features.scheduling': 'Maintenance scheduling optimization',
+    'industrial.predictive.features.inventory': 'Parts inventory automation',
+    
+    'industrial.quality.title': 'Quality Control Automation',
+    'industrial.quality.description': 'Computer vision and ML algorithms that detect defects and ensure consistent product quality at scale.',
+    'industrial.quality.features.detection': 'Automated defect detection',
+    'industrial.quality.features.metrics': 'Real-time quality metrics',
+    'industrial.quality.features.optimization': 'Process optimization',
+    'industrial.quality.features.monitoring': 'Compliance monitoring',
+    
+    'industrial.production.title': 'Production Optimization',
+    'industrial.production.description': 'Intelligent systems that optimize production schedules, resource allocation, and workflow efficiency.',
+    'industrial.production.features.planning': 'Production planning AI',
+    'industrial.production.features.resource': 'Resource optimization',
+    'industrial.production.features.workflow': 'Workflow automation',
+    'industrial.production.features.capacity': 'Capacity planning',
+    
+    'industrial.supply.title': 'Supply Chain Intelligence',
+    'industrial.supply.description': 'Smart logistics and inventory management that optimizes your entire supply chain ecosystem.',
+    'industrial.supply.features.forecasting': 'Demand forecasting',
+    'industrial.supply.features.inventory': 'Inventory optimization',
+    'industrial.supply.features.supplier': 'Supplier performance tracking',
+    'industrial.supply.features.logistics': 'Logistics automation',
+    
+    'industrial.workforce.title': 'Workforce Management',
+    'industrial.workforce.description': 'AI-driven systems that optimize staff allocation, safety protocols, and skill development programs.',
+    'industrial.workforce.features.shift': 'Shift optimization',
+    'industrial.workforce.features.safety': 'Safety monitoring',
+    'industrial.workforce.features.skills': 'Skill gap analysis',
+    'industrial.workforce.features.training': 'Training recommendations',
+    
+    'industrial.energy.title': 'Energy Management',
+    'industrial.energy.description': 'Smart energy systems that reduce consumption while maintaining optimal production levels.',
+    'industrial.energy.features.usage': 'Energy usage optimization',
+    'industrial.energy.features.demand': 'Peak demand management',
+    'industrial.energy.features.sustainability': 'Sustainability tracking',
+    'industrial.energy.features.analytics': 'Cost reduction analytics',
+    
+    'industrial.roi.title': 'Measurable Impact on Your Bottom Line',
+    'industrial.roi.subtitle': 'Our manufacturing AI solutions deliver quantifiable results that directly impact your operational efficiency and profitability.',
+    'industrial.roi.downtime': 'Reduction in unplanned downtime',
+    'industrial.roi.maintenance': 'Decrease in maintenance costs',
+    'industrial.roi.quality': 'Improvement in quality metrics',
+    'industrial.roi.efficiency': 'Increase in production efficiency',
+    
+    'industrial.implementation.title': 'Our Manufacturing Implementation Approach',
+    'industrial.implementation.subtitle': 'We understand that manufacturing operations can\'t afford disruption. Our phased approach ensures seamless integration.',
+    
+    'industrial.phase1.title': 'Production Line Assessment',
+    'industrial.phase1.description': 'Comprehensive analysis of your current manufacturing processes, equipment, and data infrastructure.',
+    'industrial.phase1.duration': '2-3 weeks',
+    
+    'industrial.phase2.title': 'Pilot Implementation',
+    'industrial.phase2.description': 'Deploy AI solutions on a single production line to validate performance and fine-tune algorithms.',
+    'industrial.phase2.duration': '4-6 weeks',
+    
+    'industrial.phase3.title': 'Full-Scale Deployment',
+    'industrial.phase3.description': 'Roll out proven AI solutions across your entire manufacturing operation with minimal disruption.',
+    'industrial.phase3.duration': '8-12 weeks',
+    
+    'industrial.phase4.title': 'Optimization & Scaling',
+    'industrial.phase4.description': 'Continuous monitoring, optimization, and expansion of AI capabilities based on performance data.',
+    'industrial.phase4.duration': 'Ongoing',
+    
+    'industrial.cta.title': 'Ready to Optimize Your Manufacturing Operations?',
+    'industrial.cta.subtitle': 'Join industry leaders who have transformed their production efficiency with Athenex manufacturing AI.',
+    'industrial.cta.assessment': 'Schedule Your Assessment',
+    'industrial.cta.calculator': 'Download ROI Calculator',
 
     'industry.gastronomy': 'Gastronomy & Hospitality',
     'industry.industrial': 'Industrial Manufacturing',
