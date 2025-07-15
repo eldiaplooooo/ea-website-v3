@@ -1604,6 +1604,336 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
       if (savedLanguage && languages.some(lang => lang.code === savedLanguage)) {
         return savedLanguage;
       }
+    },
+    
+    // Smart Living & Personal AI translations
+    'smartliving': {
+      'hero': {
+        'title': 'Smart Living & Persönliche KI',
+        'subtitle': 'Schaffen Sie intelligente Wohnräume mit adaptiver Hausautomation, persönlichen KI-Assistenten und Energieoptimierung, die Ihr tägliches Lebenserlebnis transformiert.',
+        'cta': 'Buchen Sie Ihre Smart Home Demo'
+      },
+      'transformation': {
+        'title': 'Komplette Smart Home Transformation',
+        'subtitle': 'Wir haben die besten Smart Home Produkte von führenden Marken wie Philips Hue, Nest, Ring und mehr kuratiert. Erhalten Sie alles, was Sie für eine komplette Smart Home Transformation zu unschlagbaren Bundle-Preisen benötigen.',
+        'cta': 'Alle Produkte & Bundles erkunden'
+      },
+      'categories': {
+        'lighting': 'Smart Beleuchtung',
+        'climate': 'Klimakontrolle',
+        'security': 'Sicherheitssysteme',
+        'speakers': 'Smart Lautsprecher'
+      },
+      'bundles': {
+        'title': 'Smart Home Bundles',
+        'description': 'Sparen Sie bis zu 30% mit unseren kuratierten Smart Home Bundles. Jedes Bundle wurde von unserer KI entwickelt, um die perfekte Kombination von Geräten für Ihre spezifischen Bedürfnisse und Ihr Budget zu bieten.',
+        'starter': 'Starter Bundle: €449 (Sparen Sie €70)',
+        'security': 'Sicherheits Bundle: €579 (Sparen Sie €80)',
+        'premium': 'Premium Bundle: €999 (Sparen Sie €300)',
+        'cta': 'Alle Bundles anzeigen',
+        'savings': 'Durchschnittliche Ersparnisse'
+      },
+      'why': {
+        'title': 'Warum Hausautomation?',
+        'subtitle': 'Weil das Leben zu kurz für Routinearbeit ist — lassen Sie Ihr Zuhause das übernehmen.',
+        'errand': {
+          'title': 'Besorgungsfreies Leben',
+          'description': 'Ihre persönliche KI sagt voraus, wann Ihnen Lebensmittel oder Haushaltsartikel ausgehen, gibt die Bestellung auf und plant die Lieferung, während Sie sich auf das Wesentliche konzentrieren.'
+        },
+        'bookings': {
+          'title': 'Sofortige Buchungen & Pläne',
+          'description': 'Von Konzerten bis hin zu Flug-Check-ins, ein Sprachbefehl sichert Tickets, reserviert Tische und aktualisiert Ihren Kalender — keine Apps, keine Warteschlangen, kein Stress.'
+        },
+        'climate': {
+          'title': 'Perfektes Klima, immer',
+          'description': 'Adaptive Sensoren lernen Ihre Komfortmuster und das lokale Wetter, optimieren Heizung, Kühlung und Luftqualität in Echtzeit. Sparen Sie bis zu 40% Energie ohne einen Finger zu rühren.'
+        },
+        'security': {
+          'title': 'Schild-Level Sicherheit & Brandschutz',
+          'description': 'KI-gesteuerte Kameras, Smart Locks und Rauch-/CO-Detektoren erkennen Anomalien in Millisekunden, lösen Alarme aus und können sogar Notdienste rufen.'
+        },
+        'care': {
+          'title': 'Pflege über Distanz',
+          'description': 'Diskrete Sturzsensoren, Medikamentenerinnerungen und bidirektionale Video-Check-ins halten ältere Eltern sicher und verbunden.'
+        },
+        'control': {
+          'title': 'Einheitliche Kontrolle, mühelose Routine',
+          'description': 'Lichter, Jalousien, Musik, Geräte — alles choreografiert über ein einziges Dashboard oder einen einfachen "Gute Nacht" Sprachbefehl.'
+        },
+        'cta': {
+          'title': 'Machen Sie den Sprung von vernetzten Geräten zu einem wirklich intelligenten Lebensstil.',
+          'subtitle': 'Erkunden Sie unsere Bundles oder buchen Sie heute eine Live-Demo und sehen Sie, wie Smart Living Häuser in reaktionsfähige, fürsorgliche Partner verwandelt — 24/7.',
+          'bundles': 'Smart Bundles erkunden',
+          'demo': 'Live-Demo buchen'
+        }
+      },
+      'solutions': {
+        'title': 'Intelligente Heim-Lösungen',
+        'subtitle': 'Verwandeln Sie Ihren Wohnraum in ein intelligentes Ökosystem, das Ihre Vorlieben lernt, den Komfort optimiert und Ihre täglichen Routinen verbessert.',
+        'assistant': {
+          'title': 'Persönlicher KI-Assistent',
+          'description': 'Sprachaktivierte KI, die Ihren Zeitplan verwaltet, Smart Devices steuert und personalisierte Unterstützung bietet.',
+          'features': {
+            'voice': 'Sprachbefehlserkennung',
+            'schedule': 'Terminverwaltung',
+            'control': 'Smart Device Kontrolle',
+            'recommendations': 'Personalisierte Empfehlungen'
+          }
+        },
+        'climate': {
+          'title': 'Klima-Intelligenz',
+          'description': 'Adaptive Klimakontrolle, die Ihre Vorlieben lernt und die Temperatur für Komfort und Effizienz optimiert.',
+          'features': {
+            'temperature': 'Adaptive Temperaturkontrolle',
+            'weather': 'Wetterintegration',
+            'occupancy': 'Belegungserkennung',
+            'energy': 'Energieoptimierung'
+          }
+        },
+        'lighting': {
+          'title': 'Intelligente Beleuchtung',
+          'description': 'Smart Beleuchtungssysteme, die sich automatisch basierend auf Zeit, Aktivität und natürlichen Lichtverhältnissen anpassen.',
+          'features': {
+            'circadian': 'Zirkadiane Rhythmus-Beleuchtung',
+            'scene': 'Automatisierte Szenenkontrolle',
+            'motion': 'Bewegungserkennung',
+            'natural': 'Natürliche Lichtintegration'
+          }
+        },
+        'security': {
+          'title': 'Erweiterte Sicherheit',
+          'description': 'KI-gestützte Sicherheitssysteme mit Gesichtserkennung, Anomalieerkennung und intelligenter Überwachung.',
+          'features': {
+            'facial': 'Gesichtserkennung',
+            'intrusion': 'Einbruchserkennung',
+            'notifications': 'Smart Benachrichtigungen',
+            'monitoring': 'Fernüberwachung'
+          }
+        },
+        'energy': {
+          'title': 'Energiemanagement',
+          'description': 'Intelligente Energiesysteme, die den Verbrauch optimieren, Kosten reduzieren und erneuerbare Energiequellen integrieren.',
+          'features': {
+            'optimization': 'Verbrauchsoptimierung',
+            'shaving': 'Spitzenlastreduzierung',
+            'solar': 'Solarintegration',
+            'analytics': 'Kostensenkungsanalysen'
+          }
+        },
+        'automation': {
+          'title': 'Ganzhaus-Automatisierung',
+          'description': 'Zentralisiertes Kontrollsystem, das alle Smart Devices für nahtloses Hausmanagement orchestriert.',
+          'features': {
+            'centralized': 'Zentralisierte Kontrolle',
+            'integration': 'Geräteintegration',
+            'routines': 'Automatisierte Routinen',
+            'remote': 'Fernzugriff'
+          }
+        }
+      },
+      'benefits': {
+        'title': 'Smart Living Vorteile',
+        'subtitle': 'Erleben Sie die greifbaren Vorteile intelligenter Hausautomation, die sich an Ihren Lebensstil anpasst.',
+        'energy': 'Durchschnittliche Energieeinsparungen',
+        'time': 'Täglich gesparte Zeit',
+        'satisfaction': 'Nutzerzufriedenheitsrate',
+        'security': 'Verbesserte Haussicherheit'
+      },
+      'installation': {
+        'title': 'Einfacher Installationsprozess',
+        'subtitle': 'Unser Expertenteam kümmert sich um alles von der ersten Beratung bis zur finalen Optimierung und gewährleistet eine nahtlose Smart Home Transformation.',
+        'assessment': {
+          'title': 'Hausbewertung',
+          'description': 'Umfassende Bewertung Ihres Hauslayouts, bestehender Systeme und Automatisierungsziele.'
+        },
+        'design': {
+          'title': 'Individuelles Design',
+          'description': 'Personalisierter Smart Home Bauplan, zugeschnitten auf Ihren Lebensstil und Ihre Vorlieben.'
+        },
+        'installation': {
+          'title': 'Professionelle Installation',
+          'description': 'Experteninstallation aller Smart Devices und Systeme mit minimaler Störung.'
+        },
+        'optimization': {
+          'title': 'Optimierung & Schulung',
+          'description': 'Systemoptimierung und umfassende Schulung zur Maximierung Ihrer Smart Home Erfahrung.'
+        }
+      },
+      'features': {
+        'title': 'Erweiterte Smart Home Funktionen',
+        'subtitle': 'Entdecken Sie die hochmodernen Funktionen, die unsere Smart Home Lösungen von der Konkurrenz abheben.',
+        'predictive': {
+          'title': 'Prädiktive Automatisierung',
+          'description': 'KI, die Ihre Routinen lernt und Einstellungen automatisch anpasst, bevor Sie merken, dass Sie sie brauchen.',
+          'features': {
+            'behavioral': 'Verhaltensmuster-Lernen',
+            'scheduling': 'Prädiktive Terminplanung',
+            'adjustments': 'Proaktive Anpassungen',
+            'optimization': 'Kontinuierliche Optimierung'
+          }
+        },
+        'voice': {
+          'title': 'Sprach- & Gestenkontrolle',
+          'description': 'Natürliche Interaktion durch erweiterte Spracherkennung und Gestenkontrolle für intuitive Hausverwaltung.',
+          'features': {
+            'multilang': 'Mehrsprachige Unterstützung',
+            'gesture': 'Gestenerkennung',
+            'context': 'Kontextbewusstsein',
+            'responses': 'Personalisierte Antworten'
+          }
+        },
+        'health': {
+          'title': 'Integrierte Gesundheitsüberwachung',
+          'description': 'Subtile Gesundheits- und Wellness-Überwachung durch Umgebungssensoren und Wearable-Integration.',
+          'features': {
+            'air': 'Luftqualitätsüberwachung',
+            'sleep': 'Schlafoptimierung',
+            'activity': 'Aktivitätsverfolgung',
+            'insights': 'Wellness-Einblicke'
+          }
+        },
+        'adaptive': {
+          'title': 'Adaptive Sicherheit',
+          'description': 'Intelligente Sicherheit, die sich an Ihren Lebensstil anpasst und personalisierten Schutz bietet.',
+          'features': {
+            'baselines': 'Verhaltensbaselines',
+            'assessment': 'Bedrohungsbewertung',
+            'response': 'Notfallreaktion',
+            'privacy': 'Datenschutz'
+          }
+        }
+      },
+      'cta': {
+        'title': 'Bereit, Ihr Zuhause zu transformieren?',
+        'subtitle': 'Schließen Sie sich Tausenden von Hausbesitzern an, die intelligente Wohnräume mit Athenex Smart Home Technologie geschaffen haben.',
+        'consultation': 'Hausberatung planen',
+        'products': 'Smart Home Produkte kaufen'
+      }
+    },
+    
+    // Healthcare & Life Sciences translations
+    'healthcare': {
+      'hero': {
+        'title': 'Gesundheitswesen & Lebenswissenschaften',
+        'subtitle': 'Verbessern Sie Patientenergebnisse mit diagnostischer Unterstützung, automatisierten Verwaltungsaufgaben und intelligenten Patientenmanagementsystemen, die Pflegequalität und Effizienz steigern.',
+        'cta': 'Buchen Sie Ihre Gesundheits-KI Demo'
+      },
+      'solutions': {
+        'title': 'Erweiterte Gesundheits-KI Lösungen',
+        'subtitle': 'Transformieren Sie die Patientenversorgung mit intelligenten Systemen, die klinische Entscheidungsfindung unterstützen, Abläufe optimieren und Gesundheitsergebnisse verbessern.',
+        'diagnostic': {
+          'title': 'Diagnostische Unterstützungssysteme',
+          'description': 'KI-gestützte diagnostische Unterstützung, die medizinische Bilder, Laborergebnisse und Patientendaten für genaue Diagnosen analysiert.',
+          'features': {
+            'imaging': 'Medizinische Bildanalyse',
+            'symptoms': 'Symptombewertung',
+            'differential': 'Differentialdiagnose',
+            'stratification': 'Risikostratifizierung'
+          }
+        },
+        'management': {
+          'title': 'Patientenmanagement',
+          'description': 'Umfassende Patientenmanagementsysteme, die Pflegepfade optimieren und Patientenengagement verbessern.',
+          'features': {
+            'pathways': 'Pflegepfad-Optimierung',
+            'scheduling': 'Terminplanung',
+            'adherence': 'Behandlungstreue',
+            'communication': 'Patientenkommunikation'
+          }
+        },
+        'documentation': {
+          'title': 'Klinische Dokumentation',
+          'description': 'Automatisierte klinische Dokumentation, die administrative Belastung reduziert und Genauigkeit verbessert.',
+          'features': {
+            'transcription': 'Sprache-zu-Text Transkription',
+            'generation': 'Klinische Notizenerstellung',
+            'coding': 'Kodierungsunterstützung',
+            'assurance': 'Qualitätssicherung'
+          }
+        },
+        'monitoring': {
+          'title': 'Fernüberwachung',
+          'description': 'Kontinuierliche Patientenüberwachungssysteme, die Vitalzeichen und Gesundheitsmetriken aus der Ferne verfolgen.',
+          'features': {
+            'vitals': 'Vitalzeichenüberwachung',
+            'alerts': 'Alarmsysteme',
+            'analysis': 'Trendanalyse',
+            'preventive': 'Präventivpflege'
+          }
+        },
+        'research': {
+          'title': 'Arzneimittelforschung & Forschung',
+          'description': 'KI-beschleunigte Forschungs- und Arzneimittelentdeckungsprozesse, die Entwicklungszeit und -kosten reduzieren.',
+          'features': {
+            'molecular': 'Molekularanalyse',
+            'trials': 'Klinische Studienoptimierung',
+            'biomarkers': 'Biomarker-Entdeckung',
+            'automation': 'Forschungsautomatisierung'
+          }
+        },
+        'personalized': {
+          'title': 'Personalisierte Medizin',
+          'description': 'Maßgeschneiderte Behandlungspläne basierend auf individuellen Patientenmerkmalen und genetischen Profilen.',
+          'features': {
+            'genomic': 'Genomanalyse',
+            'personalization': 'Behandlungspersonalisierung',
+            'prediction': 'Ergebnisvorhersage',
+            'dosing': 'Präzisionsdosierung'
+          }
+        }
+      },
+      'impact': {
+        'title': 'Messbare Gesundheitsauswirkungen',
+        'subtitle': 'Unsere Gesundheits-KI Lösungen liefern quantifizierbare Verbesserungen bei Patientenergebnissen, operativer Effizienz und Kostensenkung.',
+        'accuracy': 'Verbesserung der diagnostischen Genauigkeit',
+        'documentation': 'Reduzierung der Dokumentationszeit',
+        'readmission': 'Rückgang der Wiederaufnahmeraten',
+        'treatment': 'Schnellere Behandlungseinleitung'
+      },
+      'success': {
+        'title': 'Kunden-Erfolgsgeschichte',
+        'company': 'Falchi Dental Wiesbaden',
+        'quote': 'Die KI-Diagnosetools von Athenex haben unsere Praxis revolutioniert. Wir haben signifikante Verbesserungen bei der Behandlungsgenauigkeit und Patientenzufriedenheit gesehen, während die Diagnosezeit um 40% reduziert wurde.',
+        'results': {
+          'time': '40% Reduzierung der Diagnosezeit',
+          'accuracy': '95% Verbesserung der Behandlungsgenauigkeit',
+          'experience': 'Verbesserte Patientenerfahrung'
+        }
+      },
+      'compliance': {
+        'title': 'Gesundheits-Compliance & Sicherheit',
+        'subtitle': 'Unsere Lösungen sind mit gesundheitsspezifischen Compliance- und Sicherheitsanforderungen entwickelt und gewährleisten Patientendatenschutz und regulatorische Einhaltung.',
+        'hipaa': {
+          'title': 'HIPAA-Compliance',
+          'description': 'Vollständige HIPAA-Compliance mit erweiterten Verschlüsselungs- und Zugriffskontrollen zum Schutz von Patientendaten.'
+        },
+        'fda': {
+          'title': 'FDA-Validierung',
+          'description': 'Unsere diagnostischen KI-Tools folgen FDA-Richtlinien und Validierungsprozessen für Medizinprodukte.'
+        },
+        'security': {
+          'title': 'Datensicherheit',
+          'description': 'Unternehmensklasse-Sicherheit mit Ende-zu-Ende-Verschlüsselung und sicheren Datenverarbeitungsprotokollen.'
+        },
+        'audit': {
+          'title': 'Audit-Trails',
+          'description': 'Umfassende Audit-Trails und Protokollierung für Compliance-Berichterstattung und Qualitätssicherung.'
+        },
+        'privacy': {
+          'title': 'Datenschutz',
+          'description': 'Erweiterte Datenschutzmaßnahmen einschließlich Datenanonymisierung und Zugriffskontrollen.'
+        },
+        'integration': {
+          'title': 'Integrationsstandards',
+          'description': 'Vollständige Integration mit HL7 FHIR-Standards und bestehenden Gesundheitsinformationssystemen.'
+        }
+      },
+      'cta': {
+        'title': 'Transformieren Sie die Patientenversorgung mit KI',
+        'subtitle': 'Schließen Sie sich führenden Gesundheitsdienstleistern an, die Patientenergebnisse und operative Effizienz mit Athenex Gesundheits-KI verbessern.',
+        'demo': 'Gesundheitsdemo planen',
+        'guide': 'Gesundheitsleitfaden herunterladen'
+      }
     } catch {
       // Ignore localStorage errors in bolt.new
     }
