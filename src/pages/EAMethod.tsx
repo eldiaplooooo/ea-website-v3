@@ -146,6 +146,7 @@ const EAMethod: React.FC = () => {
               {[
                 {
                   number: '01',
+                  id: '1',
                   title: translate('method.phase1.title'),
                   description: translate('method.phase1.desc'),
                   duration: '2-4 weeks',
@@ -156,6 +157,7 @@ const EAMethod: React.FC = () => {
                 },
                 {
                   number: '02',
+                  id: '2',
                   title: translate('method.phase2.title'),
                   description: translate('method.phase2.desc'),
                   duration: '3-5 weeks',
@@ -166,6 +168,7 @@ const EAMethod: React.FC = () => {
                 },
                 {
                   number: '03',
+                  id: '3',
                   title: translate('method.phase3.title'),
                   description: translate('method.phase3.desc'),
                   duration: '6-12 weeks',
@@ -176,6 +179,7 @@ const EAMethod: React.FC = () => {
                 },
                 {
                   number: '04',
+                  id: '4',
                   title: translate('method.phase4.title'),
                   description: translate('method.phase4.desc'),
                   duration: 'Ongoing',
@@ -229,7 +233,7 @@ const EAMethod: React.FC = () => {
                             {stage.deliverables.map((deliverable, deliverableIndex) => (
                               <li key={deliverableIndex} className="flex items-center space-x-3">
                                 <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0" />
-                                <span className="text-gray-700 dark:text-gray-300 font-light">{deliverable}</span>
+                                <span className="text-gray-700 dark:text-gray-300 font-light">{translate(`method.phase${stage.id}.deliverables.${deliverable.toLowerCase().replace(/[^a-z]/g, '')}`) || deliverable}</span>
                               </li>
                             ))}
                           </ul>

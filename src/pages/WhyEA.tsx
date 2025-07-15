@@ -121,9 +121,9 @@ const WhyEA: React.FC = () => {
       <section className="py-20 bg-blue-50 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">EA Solutions vs. The Competition</h2>
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">{translate('why.comparison.title')}</h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              See how we stack up against generic AI solutions and traditional consulting firms.
+              {translate('why.comparison.subtitle')}
             </p>
           </div>
 
@@ -132,49 +132,49 @@ const WhyEA: React.FC = () => {
               <table className="w-full">
                 <thead className="bg-gray-50 dark:bg-gray-800">
                   <tr>
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900 dark:text-white">Feature</th>
-                    <th className="px-6 py-4 text-center text-sm font-semibold text-blue-900 dark:text-blue-400 bg-blue-100 dark:bg-blue-900/20">EA Solutions</th>
-                    <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900 dark:text-gray-300">Generic AI Platforms</th>
-                    <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900 dark:text-gray-300">Traditional Consulting</th>
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900 dark:text-white">{translate('why.comparison.feature')}</th>
+                    <th className="px-6 py-4 text-center text-sm font-semibold text-blue-900 dark:text-blue-400 bg-blue-100 dark:bg-blue-900/20">{translate('why.comparison.ea')}</th>
+                    <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900 dark:text-gray-300">{translate('why.comparison.generic')}</th>
+                    <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900 dark:text-gray-300">{translate('why.comparison.traditional')}</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
                   {[
                     {
-                      feature: 'Custom AI Development',
-                      ea: '✓ Fully Bespoke',
-                      generic: '✗ One-size-fits-all',
-                      traditional: '△ Limited Customization'
+                      feature: translate('why.comparison.custom'),
+                      ea: translate('why.comparison.custom.ea'),
+                      generic: translate('why.comparison.custom.generic'),
+                      traditional: translate('why.comparison.custom.traditional')
                     },
                     {
-                      feature: 'Industry Expertise',
-                      ea: '✓ Deep Domain Knowledge',
-                      generic: '✗ Generic Solutions',
-                      traditional: '△ Broad but Shallow'
+                      feature: translate('why.comparison.expertise.title'),
+                      ea: translate('why.comparison.expertise.ea'),
+                      generic: translate('why.comparison.expertise.generic'),
+                      traditional: translate('why.comparison.expertise.traditional')
                     },
                     {
-                      feature: 'Implementation Speed',
-                      ea: '✓ Rapid Deployment',
-                      generic: '△ Moderate',
-                      traditional: '✗ Slow & Bureaucratic'
+                      feature: translate('why.comparison.speed'),
+                      ea: translate('why.comparison.speed.ea'),
+                      generic: translate('why.comparison.speed.generic'),
+                      traditional: translate('why.comparison.speed.traditional')
                     },
                     {
-                      feature: 'Ongoing Support',
-                      ea: '✓ Continuous Evolution',
-                      generic: '△ Basic Support',
-                      traditional: '✗ Project-based Only'
+                      feature: translate('why.comparison.support'),
+                      ea: translate('why.comparison.support.ea'),
+                      generic: translate('why.comparison.support.generic'),
+                      traditional: translate('why.comparison.support.traditional')
                     },
                     {
-                      feature: 'Performance Guarantee',
-                      ea: '✓ Results-based',
-                      generic: '✗ No Guarantees',
-                      traditional: '✗ No Guarantees'
+                      feature: translate('why.comparison.guarantee'),
+                      ea: translate('why.comparison.guarantee.ea'),
+                      generic: translate('why.comparison.guarantee.generic'),
+                      traditional: translate('why.comparison.guarantee.traditional')
                     },
                     {
-                      feature: 'Security & Privacy',
-                      ea: '✓ Enterprise-grade',
-                      generic: '△ Standard',
-                      traditional: '△ Varies'
+                      feature: translate('why.comparison.security'),
+                      ea: translate('why.comparison.security.ea'),
+                      generic: translate('why.comparison.security.generic'),
+                      traditional: translate('why.comparison.security.traditional')
                     }
                   ].map((row, index) => (
                     <tr key={index} className={index % 2 === 0 ? 'bg-white dark:bg-gray-900' : 'bg-gray-50 dark:bg-gray-800'}>

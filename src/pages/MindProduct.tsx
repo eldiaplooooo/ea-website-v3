@@ -332,7 +332,7 @@ const MindProduct: React.FC = () => {
             </h1>
             
             <p className="text-3xl md:text-4xl mb-6 text-gray-300 dark:text-gray-400 font-light">
-              Unleash one intelligence to connect dots humans didn't know existed.
+              {translate('mind.hero.tagline')}
             </p>
             
             <p className="text-xl md:text-2xl mb-12 text-gray-300 dark:text-gray-400 max-w-5xl mx-auto font-light leading-relaxed">
@@ -364,11 +364,11 @@ const MindProduct: React.FC = () => {
             <div className="text-center">
               <p className="text-gray-400 dark:text-gray-500 mb-6">{translate('mind.trusted')}</p>
               <div className="flex justify-center items-center space-x-8 opacity-60">
-                <div className="text-sm font-medium">Hotel am Kochbrunnen</div>
+                <div className="text-sm font-medium">{translate('home.trust.hotel.name')}</div>
                 <div className="w-2 h-2 bg-white rounded-full"></div>
-                <div className="text-sm font-medium">Falchi Dental</div>
+                <div className="text-sm font-medium">{translate('home.trust.dental.name')}</div>
                 <div className="w-2 h-2 bg-white rounded-full"></div>
-                <div className="text-sm font-medium">Klavierschule Glenn Miller</div>
+                <div className="text-sm font-medium">{translate('home.trust.piano.name')}</div>
               </div>
             </div>
           </div>
@@ -447,8 +447,8 @@ const MindProduct: React.FC = () => {
                   <div className="bg-gradient-to-br from-blue-500 to-purple-600 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
                     <IconComponent className="h-8 w-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">{feature.title}</h3>
-                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">{feature.description}</p>
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">{translate(`mind.architecture.${feature.title.toLowerCase().replace(/[^a-z]/g, '')}`)}</h3>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">{translate(`mind.architecture.${feature.title.toLowerCase().replace(/[^a-z]/g, '')}.desc`)}</p>
                 </div>
               );
             })}
@@ -476,7 +476,7 @@ const MindProduct: React.FC = () => {
                   <div className={`${industry.bgColor} w-24 h-24 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-110 group-hover:rotate-6 border border-gray-100 dark:border-gray-700`}>
                     <IconComponent className={`h-10 w-10 ${industry.color}`} />
                   </div>
-                  <span className="text-gray-700 dark:text-gray-300 font-medium">{industry.name}</span>
+                  <span className="text-gray-700 dark:text-gray-300 font-medium">{translate(`mind.industries.${industry.name.toLowerCase().replace(' ', '')}`)}</span>
                 </div>
               );
             })}
@@ -546,7 +546,7 @@ const MindProduct: React.FC = () => {
                   {plan.features.map((feature, index) => (
                     <li key={index} className="flex items-center space-x-3">
                       <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0" />
-                      <span className="text-gray-700 dark:text-gray-300">{feature}</span>
+                      <span className="text-gray-700 dark:text-gray-300">{translate(`mind.pricing.${plan.id}.features.${feature.toLowerCase().replace(/[^a-z]/g, '')}`) || feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -611,14 +611,14 @@ const MindProduct: React.FC = () => {
                 </div>
                 
                 <blockquote className="text-gray-700 dark:text-gray-300 mb-6 text-lg font-light leading-relaxed">
-                  "{testimonial.quote}"
+                  "{translate(`mind.testimonials.${testimonial.company.toLowerCase().replace(/[^a-z]/g, '')}.quote`)}"
                 </blockquote>
                 
                 <div className="space-y-3 mb-6">
                   {testimonial.results.map((result, idx) => (
                     <div key={idx} className="flex items-center space-x-2">
                       <CheckCircle className="h-4 w-4 text-green-500" />
-                      <span className="text-sm text-gray-600 dark:text-gray-400">{result}</span>
+                      <span className="text-sm text-gray-600 dark:text-gray-400">{translate(`mind.testimonials.${testimonial.company.toLowerCase().replace(/[^a-z]/g, '')}.results.${result.split(' ')[1] || result.split(' ')[0]}`) || result}</span>
                     </div>
                   ))}
                 </div>
@@ -778,19 +778,19 @@ const MindProduct: React.FC = () => {
                     <ul className="space-y-2 text-sm">
                       <li className="flex items-center space-x-2">
                         <CheckCircle className="h-4 w-4 text-green-500" />
-                        <span className="text-gray-700 dark:text-gray-300">65% average efficiency increase</span>
+                        <span className="text-gray-700 dark:text-gray-300">{translate('mind.roi.benefits.efficiency')}</span>
                       </li>
                       <li className="flex items-center space-x-2">
                         <CheckCircle className="h-4 w-4 text-green-500" />
-                        <span className="text-gray-700 dark:text-gray-300">45% reduction in operational costs</span>
+                        <span className="text-gray-700 dark:text-gray-300">{translate('mind.roi.benefits.costs')}</span>
                       </li>
                       <li className="flex items-center space-x-2">
                         <CheckCircle className="h-4 w-4 text-green-500" />
-                        <span className="text-gray-700 dark:text-gray-300">99.9% system uptime guarantee</span>
+                        <span className="text-gray-700 dark:text-gray-300">{translate('mind.roi.benefits.uptime')}</span>
                       </li>
                       <li className="flex items-center space-x-2">
                         <CheckCircle className="h-4 w-4 text-green-500" />
-                        <span className="text-gray-700 dark:text-gray-300">24/7 intelligent automation</span>
+                        <span className="text-gray-700 dark:text-gray-300">{translate('mind.roi.benefits.automation')}</span>
                       </li>
                     </ul>
                   </div>
