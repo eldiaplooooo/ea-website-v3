@@ -1,7 +1,10 @@
 import React from 'react';
 import { Factory, Cog, TrendingUp, Shield, Zap, Users } from 'lucide-react';
+import { useLanguage } from '../../components/LanguageSelector';
 
 const IndustrialManufacturing: React.FC = () => {
+  const { translate } = useLanguage();
+
   return (
     <div className="min-h-screen pt-16">
       {/* Hero Section */}
@@ -11,20 +14,25 @@ const IndustrialManufacturing: React.FC = () => {
             <div>
               <div className="flex items-center space-x-3 mb-6">
                 <Factory className="h-12 w-12" />
-                <h1 className="text-4xl md:text-5xl font-bold">Industrial & Manufacturing</h1>
+                <h1 className="text-4xl md:text-5xl font-bold">{translate('industrial.hero.title')}</h1>
               </div>
               <p className="text-xl text-gray-300 mb-8">
-                Optimize production efficiency with predictive maintenance, quality control automation, 
-                and intelligent supply chain management that transforms your manufacturing operations.
+                {translate('industrial.hero.subtitle')}
               </p>
-              <button className="bg-white text-gray-800 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
-                Book Your Manufacturing AI Demo
+              <button 
+                onClick={() => {
+                  const event = new CustomEvent('openBookingModal');
+                  window.dispatchEvent(event);
+                }}
+                className="bg-white text-gray-800 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
+              >
+                {translate('industrial.hero.cta')}
               </button>
             </div>
             <div className="bg-white bg-opacity-10 rounded-2xl p-8 backdrop-blur-sm">
               <img 
                 src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" 
-                alt="Modern manufacturing facility" 
+                alt={translate('industrial.hero.title')} 
                 className="w-full h-64 object-cover rounded-lg"
               />
             </div>
@@ -36,10 +44,9 @@ const IndustrialManufacturing: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Smart Manufacturing Solutions</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">{translate('industrial.solutions.title')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From predictive maintenance to quality assurance, our AI solutions optimize every aspect 
-              of your manufacturing process for maximum efficiency and minimal downtime.
+              {translate('industrial.solutions.subtitle')}
             </p>
           </div>
 
@@ -47,39 +54,69 @@ const IndustrialManufacturing: React.FC = () => {
             {[
               {
                 icon: Cog,
-                title: 'Predictive Maintenance',
-                description: 'AI-powered monitoring systems that predict equipment failures before they occur, reducing downtime by up to 70%.',
-                features: ['Real-time equipment monitoring', 'Failure prediction algorithms', 'Maintenance scheduling optimization', 'Parts inventory automation']
+                title: translate('industrial.predictive.title'),
+                description: translate('industrial.predictive.description'),
+                features: [
+                  translate('industrial.predictive.features.monitoring'),
+                  translate('industrial.predictive.features.prediction'),
+                  translate('industrial.predictive.features.scheduling'),
+                  translate('industrial.predictive.features.inventory')
+                ]
               },
               {
                 icon: Shield,
-                title: 'Quality Control Automation',
-                description: 'Computer vision and ML algorithms that detect defects and ensure consistent product quality at scale.',
-                features: ['Automated defect detection', 'Real-time quality metrics', 'Process optimization', 'Compliance monitoring']
+                title: translate('industrial.quality.title'),
+                description: translate('industrial.quality.description'),
+                features: [
+                  translate('industrial.quality.features.detection'),
+                  translate('industrial.quality.features.metrics'),
+                  translate('industrial.quality.features.optimization'),
+                  translate('industrial.quality.features.monitoring')
+                ]
               },
               {
                 icon: TrendingUp,
-                title: 'Production Optimization',
-                description: 'Intelligent systems that optimize production schedules, resource allocation, and workflow efficiency.',
-                features: ['Production planning AI', 'Resource optimization', 'Workflow automation', 'Capacity planning']
+                title: translate('industrial.production.title'),
+                description: translate('industrial.production.description'),
+                features: [
+                  translate('industrial.production.features.planning'),
+                  translate('industrial.production.features.resource'),
+                  translate('industrial.production.features.workflow'),
+                  translate('industrial.production.features.capacity')
+                ]
               },
               {
                 icon: Zap,
-                title: 'Supply Chain Intelligence',
-                description: 'Smart logistics and inventory management that optimizes your entire supply chain ecosystem.',
-                features: ['Demand forecasting', 'Inventory optimization', 'Supplier performance tracking', 'Logistics automation']
+                title: translate('industrial.supply.title'),
+                description: translate('industrial.supply.description'),
+                features: [
+                  translate('industrial.supply.features.forecasting'),
+                  translate('industrial.supply.features.inventory'),
+                  translate('industrial.supply.features.supplier'),
+                  translate('industrial.supply.features.logistics')
+                ]
               },
               {
                 icon: Users,
-                title: 'Workforce Management',
-                description: 'AI-driven systems that optimize staff allocation, safety protocols, and skill development programs.',
-                features: ['Shift optimization', 'Safety monitoring', 'Skill gap analysis', 'Training recommendations']
+                title: translate('industrial.workforce.title'),
+                description: translate('industrial.workforce.description'),
+                features: [
+                  translate('industrial.workforce.features.shift'),
+                  translate('industrial.workforce.features.safety'),
+                  translate('industrial.workforce.features.skills'),
+                  translate('industrial.workforce.features.training')
+                ]
               },
               {
                 icon: Factory,
-                title: 'Energy Management',
-                description: 'Smart energy systems that reduce consumption while maintaining optimal production levels.',
-                features: ['Energy usage optimization', 'Peak demand management', 'Sustainability tracking', 'Cost reduction analytics']
+                title: translate('industrial.energy.title'),
+                description: translate('industrial.energy.description'),
+                features: [
+                  translate('industrial.energy.features.usage'),
+                  translate('industrial.energy.features.demand'),
+                  translate('industrial.energy.features.sustainability'),
+                  translate('industrial.energy.features.analytics')
+                ]
               }
             ].map((solution, index) => {
               const IconComponent = solution.icon;
@@ -109,9 +146,9 @@ const IndustrialManufacturing: React.FC = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Measurable Impact on Your Bottom Line</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">{translate('industrial.roi.title')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our manufacturing AI solutions deliver quantifiable results that directly impact your operational efficiency and profitability.
+              {translate('industrial.roi.subtitle')}
             </p>
           </div>
 
@@ -119,22 +156,22 @@ const IndustrialManufacturing: React.FC = () => {
             {[
               {
                 metric: '70%',
-                description: 'Reduction in unplanned downtime',
+                description: translate('industrial.roi.downtime'),
                 icon: TrendingUp
               },
               {
                 metric: '45%',
-                description: 'Decrease in maintenance costs',
+                description: translate('industrial.roi.maintenance'),
                 icon: Cog
               },
               {
                 metric: '60%',
-                description: 'Improvement in quality metrics',
+                description: translate('industrial.roi.quality'),
                 icon: Shield
               },
               {
                 metric: '35%',
-                description: 'Increase in production efficiency',
+                description: translate('industrial.roi.efficiency'),
                 icon: Factory
               }
             ].map((stat, index) => {
@@ -157,9 +194,9 @@ const IndustrialManufacturing: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Manufacturing Implementation Approach</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">{translate('industrial.implementation.title')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We understand that manufacturing operations can't afford disruption. Our phased approach ensures seamless integration.
+              {translate('industrial.implementation.subtitle')}
             </p>
           </div>
 
@@ -168,15 +205,15 @@ const IndustrialManufacturing: React.FC = () => {
               {[
                 {
                   phase: 'Phase 1',
-                  title: 'Production Line Assessment',
-                  description: 'Comprehensive analysis of your current manufacturing processes, equipment, and data infrastructure.',
-                  duration: '2-3 weeks'
+                  title: translate('industrial.phase1.title'),
+                  description: translate('industrial.phase1.description'),
+                  duration: translate('industrial.phase1.duration')
                 },
                 {
                   phase: 'Phase 2',
-                  title: 'Pilot Implementation',
-                  description: 'Deploy AI solutions on a single production line to validate performance and fine-tune algorithms.',
-                  duration: '4-6 weeks'
+                  title: translate('industrial.phase2.title'),
+                  description: translate('industrial.phase2.description'),
+                  duration: translate('industrial.phase2.duration')
                 }
               ].map((phase, index) => (
                 <div key={index} className="bg-gray-50 rounded-xl p-6">
@@ -196,15 +233,15 @@ const IndustrialManufacturing: React.FC = () => {
               {[
                 {
                   phase: 'Phase 3',
-                  title: 'Full-Scale Deployment',
-                  description: 'Roll out proven AI solutions across your entire manufacturing operation with minimal disruption.',
-                  duration: '8-12 weeks'
+                  title: translate('industrial.phase3.title'),
+                  description: translate('industrial.phase3.description'),
+                  duration: translate('industrial.phase3.duration')
                 },
                 {
                   phase: 'Phase 4',
-                  title: 'Optimization & Scaling',
-                  description: 'Continuous monitoring, optimization, and expansion of AI capabilities based on performance data.',
-                  duration: 'Ongoing'
+                  title: translate('industrial.phase4.title'),
+                  description: translate('industrial.phase4.description'),
+                  duration: translate('industrial.phase4.duration')
                 }
               ].map((phase, index) => (
                 <div key={index} className="bg-gray-50 rounded-xl p-6">
@@ -226,16 +263,22 @@ const IndustrialManufacturing: React.FC = () => {
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-gray-600 to-gray-800 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Optimize Your Manufacturing Operations?</h2>
+          <h2 className="text-4xl font-bold mb-6">{translate('industrial.cta.title')}</h2>
           <p className="text-xl text-gray-300 mb-8">
-            Join industry leaders who have transformed their production efficiency with EA Solutions' manufacturing AI.
+            {translate('industrial.cta.subtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-gray-800 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
-              Schedule Your Assessment
+            <button 
+              onClick={() => {
+                const event = new CustomEvent('openBookingModal');
+                window.dispatchEvent(event);
+              }}
+              className="bg-white text-gray-800 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
+            >
+              {translate('industrial.cta.assessment')}
             </button>
             <button className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-gray-800 transition-all duration-300">
-              Download ROI Calculator
+              {translate('industrial.cta.calculator')}
             </button>
           </div>
         </div>
