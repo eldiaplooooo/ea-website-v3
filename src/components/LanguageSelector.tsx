@@ -791,7 +791,7 @@ const translations: Record<string, Record<string, string>> = {
     
     // Footer
     'footer.description': 'Wir entwickeln maßgeschneiderte KI-Infrastrukturen, die repetitive Arbeit beseitigen, menschliches Potenzial verstärken und beispiellose Effizienzsteigerungen ermöglichen.',
-    'footer.cta': 'Buchen Sie Ihr KI-Strategiegespräch',
+    'footer.cta': 'Starten Sie Ihre EAS-Transformation',
     'footer.quickLinks': 'Schnelllinks',
     'footer.contactInfo': 'Kontaktinformationen',
     'footer.rights': 'Alle Rechte vorbehalten',
