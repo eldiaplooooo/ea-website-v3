@@ -1030,6 +1030,37 @@ const translations: Record<string, Record<string, string>> = {
     'services.cta.consultation': 'Kostenlose Beratung',
     'services.cta.portfolio': 'Portfolio herunterladen',
 
+    // Gastronomy & Hospitality German translations
+    'gastronomy.hero.title': 'Gastronomie & Gastgewerbe',
+    'gastronomy.hero.subtitle': 'Transformieren Sie Gästeerlebnisse mit intelligenten Reservierungssystemen, automatisiertem Kundenservice und prädiktiver Analytik für das Bestandsmanagement.',
+    'gastronomy.hero.cta': 'Buchen Sie Ihre Gastgewerbe-KI-Demo',
+    'gastronomy.solutions.title': 'Intelligente Gastgewerbe-Lösungen',
+    'gastronomy.solutions.subtitle': 'Von intelligenten Reservierungen bis hin zu prädiktiver Analytik transformieren unsere KI-Lösungen jeden Aspekt Ihrer Gastgewerbe-Operationen.',
+    'gastronomy.success.title': 'Erfolgsgeschichte',
+    'gastronomy.success.company': 'Hotel am Kochbrunnen',
+    'gastronomy.success.quote': 'EA Solutions hat unseren gesamten Gastgewerbebetrieb transformiert. Die KI-gestützten Systeme haben revolutioniert, wie wir Reservierungen verwalten, Gäste bedienen und unsere Abläufe optimieren.',
+    'gastronomy.implementation.title': 'Implementierungsprozess',
+    'gastronomy.implementation.subtitle': 'Unser bewährter 4-Schritte-Prozess gewährleistet eine nahtlose Integration von KI-Lösungen in Ihre Gastgewerbe-Operationen.',
+    'gastronomy.cta.title': 'Bereit, Ihr Gastgewerbebusiness zu transformieren?',
+    'gastronomy.cta.subtitle': 'Schließen Sie sich führenden Hotels und Restaurants an, die ihre Abläufe mit EA Solutions\' Gastgewerbe-KI revolutioniert haben.',
+    'gastronomy.cta.demo': 'Buchen Sie Ihre Gastgewerbe-Demo',
+    'gastronomy.cta.casestudy': 'Fallstudie herunterladen',
+
+    // Industrial & Manufacturing German translations
+    'industrial.hero.title': 'Industrie & Fertigung',
+    'industrial.hero.subtitle': 'Optimieren Sie die Produktion mit vorausschauender Wartung, Qualitätskontrollautomatisierung und intelligentem Supply Chain Management.',
+    'industrial.hero.cta': 'Buchen Sie Ihre Fertigungs-KI-Demo',
+    'industrial.solutions.title': 'Fortschrittliche Fertigungs-KI-Lösungen',
+    'industrial.solutions.subtitle': 'Von vorausschauender Wartung bis zur Qualitätskontrolle optimieren unsere KI-Lösungen jeden Aspekt Ihrer Fertigungsoperationen.',
+    'industrial.results.title': 'Bewährte Fertigungsergebnisse',
+    'industrial.results.subtitle': 'Unsere Fertigungs-KI-Lösungen liefern messbare Verbesserungen in Effizienz, Qualität und Kostenreduzierung.',
+    'industrial.implementation.title': 'Implementierungsansatz',
+    'industrial.implementation.subtitle': 'Unser systematischer Ansatz gewährleistet eine erfolgreiche KI-Integration mit minimaler Störung Ihrer Abläufe.',
+    'industrial.cta.title': 'Bereit, Ihre Fertigung zu optimieren?',
+    'industrial.cta.subtitle': 'Schließen Sie sich führenden Herstellern an, die ihre Abläufe mit EA Solutions\' Industrie-KI-Technologie transformiert haben.',
+    'industrial.cta.assessment': 'Fertigungsbewertung planen',
+    'industrial.cta.roi': 'Berechnen Sie Ihren ROI',
+
     // EA Method page German
     'method.title': 'Die EA-Methode',
     'method.subtitle': 'Unsere bewährte 4-Phasen-Methodik, die Unternehmen durch intelligente KI-Implementierung transformiert',

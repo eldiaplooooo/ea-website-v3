@@ -14,10 +14,10 @@ const GastronomyHospitality: React.FC = () => {
             <div>
               <div className="flex items-center space-x-3 mb-6">
                 <Utensils className="h-12 w-12" />
-                <h1 className="text-4xl md:text-5xl font-bold">Gastronomy & Hospitality</h1>
+                <h1 className="text-4xl md:text-5xl font-bold">{translate('gastronomy.hero.title')}</h1>
               </div>
               <p className="text-xl text-orange-100 mb-8">
-                Transform guest experiences with intelligent reservation systems, automated customer service, and predictive analytics for inventory management.
+                {translate('gastronomy.hero.subtitle')}
               </p>
               <button 
                 onClick={() => {
@@ -26,7 +26,7 @@ const GastronomyHospitality: React.FC = () => {
                 }}
                 className="bg-white text-orange-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-orange-50 transition-colors duration-300"
               >
-                Book Your Hospitality AI Demo
+                {translate('gastronomy.hero.cta')}
               </button>
             </div>
             <div className="bg-white bg-opacity-10 rounded-2xl p-8 backdrop-blur-sm">
@@ -44,9 +44,9 @@ const GastronomyHospitality: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Intelligent Hospitality Solutions</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">{translate('gastronomy.solutions.title')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From smart reservations to predictive analytics, our AI solutions transform every aspect of your hospitality operations.
+              {translate('gastronomy.solutions.subtitle')}
             </p>
           </div>
 
@@ -148,10 +148,10 @@ const GastronomyHospitality: React.FC = () => {
           <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">Success Story</h2>
-                <h3 className="text-2xl font-semibold text-orange-600 mb-4">Hotel am Kochbrunnen</h3>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6">{translate('gastronomy.success.title')}</h2>
+                <h3 className="text-2xl font-semibold text-orange-600 mb-4">{translate('gastronomy.success.company')}</h3>
                 <p className="text-lg text-gray-600 mb-6">
-                  "EA Solutions transformed our entire hospitality operation. The AI-powered systems have revolutionized how we manage reservations, serve guests, and optimize our operations."
+                  "{translate('gastronomy.success.quote')}"
                 </p>
                 <div className="grid grid-cols-3 gap-6">
                   <div className="text-center">
@@ -184,9 +184,9 @@ const GastronomyHospitality: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Implementation Process</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">{translate('gastronomy.implementation.title')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our proven 4-step process ensures seamless integration of AI solutions into your hospitality operations.
+              {translate('gastronomy.implementation.subtitle')}
             </p>
           </div>
 
@@ -228,9 +228,9 @@ const GastronomyHospitality: React.FC = () => {
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-orange-500 to-red-500 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Transform Your Hospitality Business?</h2>
+          <h2 className="text-4xl font-bold mb-6">{translate('gastronomy.cta.title')}</h2>
           <p className="text-xl text-orange-100 mb-8">
-            Join leading hotels and restaurants that have revolutionized their operations with EA Solutions' hospitality AI.
+            {translate('gastronomy.cta.subtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button 
@@ -240,7 +240,7 @@ const GastronomyHospitality: React.FC = () => {
               }}
               className="bg-white text-orange-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-orange-50 transition-colors duration-300"
             >
-              Book Your Hospitality Demo
+              {translate('gastronomy.cta.demo')}
             </button>
             <button 
               onClick={() => {
@@ -250,7 +250,7 @@ const GastronomyHospitality: React.FC = () => {
               }}
               className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-orange-600 transition-all duration-300"
             >
-              Download Case Study
+              {translate('gastronomy.cta.casestudy')}
             </button>
           </div>
         </div>

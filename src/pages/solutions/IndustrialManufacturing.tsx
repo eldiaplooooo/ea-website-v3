@@ -14,10 +14,10 @@ const IndustrialManufacturing: React.FC = () => {
             <div>
               <div className="flex items-center space-x-3 mb-6">
                 <Factory className="h-12 w-12" />
-                <h1 className="text-4xl md:text-5xl font-bold">Industrial & Manufacturing</h1>
+                <h1 className="text-4xl md:text-5xl font-bold">{translate('industrial.hero.title')}</h1>
               </div>
               <p className="text-xl text-gray-300 mb-8">
-                Optimize production with predictive maintenance, quality control automation, and intelligent supply chain management.
+                {translate('industrial.hero.subtitle')}
               </p>
               <button 
                 onClick={() => {
@@ -26,7 +26,7 @@ const IndustrialManufacturing: React.FC = () => {
                 }}
                 className="bg-white text-gray-800 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
               >
-                Book Your Manufacturing AI Demo
+                {translate('industrial.hero.cta')}
               </button>
             </div>
             <div className="bg-white bg-opacity-10 rounded-2xl p-8 backdrop-blur-sm">
@@ -44,9 +44,9 @@ const IndustrialManufacturing: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Advanced Manufacturing AI Solutions</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">{translate('industrial.solutions.title')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From predictive maintenance to quality control, our AI solutions optimize every aspect of your manufacturing operations.
+              {translate('industrial.solutions.subtitle')}
             </p>
           </div>
 
@@ -146,9 +146,9 @@ const IndustrialManufacturing: React.FC = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Proven Manufacturing Results</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">{translate('industrial.results.title')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our manufacturing AI solutions deliver measurable improvements in efficiency, quality, and cost reduction.
+              {translate('industrial.results.subtitle')}
             </p>
           </div>
 
@@ -194,9 +194,9 @@ const IndustrialManufacturing: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Implementation Approach</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">{translate('industrial.implementation.title')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our systematic approach ensures successful AI integration with minimal disruption to your operations.
+              {translate('industrial.implementation.subtitle')}
             </p>
           </div>
 
@@ -263,9 +263,9 @@ const IndustrialManufacturing: React.FC = () => {
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-gray-600 to-gray-800 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Optimize Your Manufacturing?</h2>
+          <h2 className="text-4xl font-bold mb-6">{translate('industrial.cta.title')}</h2>
           <p className="text-xl text-gray-300 mb-8">
-            Join leading manufacturers who have transformed their operations with EA Solutions' industrial AI technology.
+            {translate('industrial.cta.subtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button 
@@ -275,10 +275,10 @@ const IndustrialManufacturing: React.FC = () => {
               }}
               className="bg-white text-gray-800 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
             >
-              Schedule Manufacturing Assessment
+              {translate('industrial.cta.assessment')}
             </button>
             <button className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-gray-800 transition-all duration-300">
-              Calculate Your ROI
+              {translate('industrial.cta.roi')}
             </button>
           </div>
         </div>
