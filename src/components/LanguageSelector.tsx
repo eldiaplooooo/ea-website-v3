@@ -1604,6 +1604,9 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
       if (savedLanguage && languages.some(lang => lang.code === savedLanguage)) {
         return savedLanguage;
       }
+    } catch {
+      // Ignore localStorage errors in bolt.new
+    }
     },
     
     // Smart Living & Personal AI translations
