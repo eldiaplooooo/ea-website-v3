@@ -199,6 +199,20 @@ const translations: Record<string, Record<string, string>> = {
     'mind.cta.schedule': 'Schedule Consultation',
     'mind.trusted': 'Trusted by leading companies worldwide',
 
+    // MIND Architecture Section
+    'mind.architecture.neuralprocessingcore': 'Neural Processing Core',
+    'mind.architecture.neuralprocessingcore.desc': 'Advanced neural networks with quantum-inspired algorithms',
+    'mind.architecture.intelligentdatalake': 'Intelligent Data Lake',
+    'mind.architecture.intelligentdatalake.desc': 'Self-organizing data architecture with automatic optimization',
+    'mind.architecture.adaptiveintegrationlayer': 'Adaptive Integration Layer',
+    'mind.architecture.adaptiveintegrationlayer.desc': 'Dynamic API management with real-time protocol adaptation',
+    'mind.architecture.zerotrustsecurity': 'Zero-Trust Security',
+    'mind.architecture.zerotrustsecurity.desc': 'Military-grade encryption with behavioral anomaly detection',
+    'mind.architecture.predictiveanalyticsengine': 'Predictive Analytics Engine',
+    'mind.architecture.predictiveanalyticsengine.desc': 'Real-time insights with future trend prediction capabilities',
+    'mind.architecture.selfhealinginfrastructure': 'Self-Healing Infrastructure',
+    'mind.architecture.selfhealinginfrastructure.desc': 'Autonomous system maintenance and performance optimization',
+
     // Services page
     'services.hero.title': 'AI-Powered Development Services',
     'services.hero.subtitle': 'Custom websites, apps, and AI solutions built with cutting-edge technology at unbeatable prices',
@@ -791,7 +805,7 @@ const translations: Record<string, Record<string, string>> = {
     
     // Footer
     'footer.description': 'Wir entwickeln maßgeschneiderte KI-Infrastrukturen, die repetitive Arbeit beseitigen, menschliches Potenzial verstärken und beispiellose Effizienzsteigerungen ermöglichen.',
-    'footer.cta': 'Starten Sie Ihre EAS-Transformation',
+    'footer.cta': 'Buchen Sie Ihr KI-Strategiegespräch',
     'footer.quickLinks': 'Schnelllinks',
     'footer.contactInfo': 'Kontaktinformationen',
     'footer.rights': 'Alle Rechte vorbehalten',
@@ -864,6 +878,20 @@ const translations: Record<string, Record<string, string>> = {
     'mind.cta.trial': 'Kostenlose Testversion starten',
     'mind.cta.schedule': 'Beratung planen',
     'mind.trusted': 'Vertraut von führenden Unternehmen weltweit',
+
+    // MIND Architecture Section
+    'mind.architecture.neuralprocessingcore': 'Neuronaler Verarbeitungskern',
+    'mind.architecture.neuralprocessingcore.desc': 'Fortschrittliche neuronale Netzwerke mit quanteninspirierten Algorithmen',
+    'mind.architecture.intelligentdatalake': 'Intelligenter Datensee',
+    'mind.architecture.intelligentdatalake.desc': 'Selbstorganisierende Datenarchitektur mit automatischer Optimierung',
+    'mind.architecture.adaptiveintegrationlayer': 'Adaptive Integrationsschicht',
+    'mind.architecture.adaptiveintegrationlayer.desc': 'Dynamisches API-Management mit Echtzeit-Protokollanpassung',
+    'mind.architecture.zerotrustsecurity': 'Zero-Trust-Sicherheit',
+    'mind.architecture.zerotrustsecurity.desc': 'Militärische Verschlüsselung mit Verhaltensanomalien-Erkennung',
+    'mind.architecture.predictiveanalyticsengine': 'Prädiktive Analyse-Engine',
+    'mind.architecture.predictiveanalyticsengine.desc': 'Echtzeit-Einblicke mit Zukunftstrend-Vorhersagefähigkeiten',
+    'mind.architecture.selfhealinginfrastructure': 'Selbstheilende Infrastruktur',
+    'mind.architecture.selfhealinginfrastructure.desc': 'Autonome Systemwartung und Leistungsoptimierung',
 
     // Services page German
     'services.hero.title': 'KI-gestützte Entwicklungsdienstleistungen',
